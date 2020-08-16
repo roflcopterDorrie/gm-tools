@@ -1,4 +1,6 @@
-# Game Master Tools
+# Game master tools
+
+Interface to help plan and manage table top gaming for dungeon masters.
 
 ## Goals
 
