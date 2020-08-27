@@ -2,8 +2,8 @@ import React from "react";
 
 class ContentEditable extends React.Component {
 
-  onInput = (evt) => {
-    this.props.onChange(evt.target.innerText.trim(), this.props.name);
+  onBlur = (evt) => {
+    this.props.onBlur(this.props.name, evt.target.innerText.trim());
   };
 
   render() {
@@ -12,7 +12,7 @@ class ContentEditable extends React.Component {
       <Element
         contentEditable={true}
         suppressContentEditableWarning={true}
-        onInput={(evt) => this.onInput(evt)}
+        onBlur={this.onBlur}
         placeholder={this.props.placeholder}
         className={this.props.className}>
           {this.props.content||''}

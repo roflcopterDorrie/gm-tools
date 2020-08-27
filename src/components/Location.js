@@ -1,39 +1,44 @@
 import React from "react";
-import ContentEditable from "./ContentEditable";
-import LocationList from './LocationList.js';
+import Card from "components/Card";
+import ContentEditable from "components/ContentEditable";
+import LocationList from 'components/LocationList.js';
 
-class Location extends React.PureComponent {
-
-  constructor(props) {
-    super(props);
-    this.locations = JSON.parse(localStorage.getItem('locations'));
-  };
-
-  change = (value, name) => {
-    this.locations[this.props.id][name] = value;
-    localStorage.setItem('locations', JSON.stringify(this.locations));
-  };
+class Location extends Card {
 
   render() {
-    let location = this.locations[this.props.id];
-
-    if (location !== null) {
-      return (
-        <section style={this.props.style} className={["card", this.props.className].join(' ')} key={this.props.key} data-grid={this.props.dataGrid}>
-          <div className="card-header">
-            <span className="card__type"><i className="fas fa-globe-americas"></i> Location</span>
-          </div>
-          <div className="card-body">
-            <ContentEditable tag="h2" onChange={this.change} name="name" content={location.name} placeholder="Name" className="card-title"/>
-            <ContentEditable tag="p" onChange={this.change} name="description" content={location.description} placeholder="Description" />
-            <LocationList parentId={this.props.id} add={this.props.add}/>
-          </div>
-          {this.props.children}
-        </section>
-      );
-    } else {
-      return <div>Something went wrong.</div>;
-    }
+    console.log(this.props.data);
+    return (
+      <section className="card">
+        <div className="card-header">
+          <span className="card__type"><i className="fas fa-globe-americas"></i> {this.props.data.name || ''}</span>
+        </div>
+        <div className="card-body">
+          <ContentEditable
+            tag="h2"
+            onBlur={this.updateData}
+            name="name"
+            content={this.props.data.name || ''}
+            placeholder="Name"
+            className="card-title"
+          />
+          <ContentEditable
+            tag="p"
+            onBlur={this.updateData}
+            name="description"
+            content={this.props.data.description || ''}
+            placeholder="Description"
+          />
+          <LocationList
+            locations={this.props.allData['locations']}
+            showCard={this.props.showCard}
+            parentId={this.props.data.id}
+          />
+        </div>
+        <div className="card-footer">
+          {this.toolbar()}
+        </div>
+      </section>
+    );
 
   }
 }

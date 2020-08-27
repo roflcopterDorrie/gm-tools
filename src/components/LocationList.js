@@ -3,44 +3,34 @@ import React from "react";
 class LocationList extends React.PureComponent {
 
   render() {
-    // Get locations data from local storage.
-    const locations = JSON.parse(localStorage.getItem('locations'));
 
-    // Filter the list of locations based on parentId.
-    // If parentId is not defined, return the top level locations.
-    const parentId = this.props.parentId;
-    const filteredLocations = Object.keys(locations).reduce(function(r, e) {
-      if (locations[e].parentId === parentId) {
-        r[e] = locations[e];
+    const filteredLocations = this.props.locations.reduce((accumulator, location, delta) => {
+      if (location.parentId === this.props.parentId) {
+        accumulator.push(<li key={delta}>
+          <span className="fa-li"><i className="fas fa-globe-americas"></i></span>
+          <button
+            className="location"
+            onClick={() => this.props.showCard('Location', location.id)}>
+              {location.name}
+          </button>
+        </li>);
       }
-      return r;
-    }, {});
-
-    // Create a list of the locations that can be clicked to open details about it.
-    const locationsList = Object.keys(filteredLocations).map(id =>
-      <li key={id}>
-        <span className="fa-li"><i className="fas fa-globe-americas"></i></span>
-        <button
-          className="location"
-          onClick={() => this.props.add('Location', id)}>
-            {filteredLocations[id].name}
-        </button>
-      </li>
-    );
+      return accumulator;
+    }, []);
 
     // If some locations are found, show them.
-    if (locationsList.length) {
+    if (filteredLocations.length) {
       return (
         <div>
-          <p className="locations__title">Locations</p>
-          <ul className="button-list fa-ul">{locationsList}</ul>
+          <h2 className="locations__title">Locations</h2>
+          <ul className="button-list fa-ul">
+            {filteredLocations}
+          </ul>
         </div>
       );
+    } else {
+      return '';
     }
-
-    // If not return nothing.
-    return '';
-
   }
 }
 
