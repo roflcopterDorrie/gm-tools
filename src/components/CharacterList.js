@@ -3,25 +3,35 @@ import React from "react";
 class CharacterList extends React.PureComponent {
 
   render() {
-    const characters = JSON.parse(localStorage.getItem('characters'));
 
-    const characterList = Object.keys(characters).map(id =>
-      <li key={id}>
-        <span class="fa-li"><i class="fas fa-user-alt"></i></span>
-        <button
-          onClick={() => this.props.open('Character', id)}>
-            {characters[id].name}
-        </button>
-      </li>
-    )
+    const filtered = this.props.characters.reduce((accumulator, character, delta) => {
+      if (character.parentId === this.props.parentId && character.parentType == this.props.parentType) {
+        accumulator.push(<li key={delta}>
+          <span className="card-minor-minor">{character.role}</span>
+          <i className="fas fa-user-alt"></i>&nbsp;
+          <button
+            className="link"
+            onClick={() => this.props.showCard('Character', character.id)}>
+              {character.name}
+          </button>
+        </li>);
+      }
+      return accumulator;
+    }, []);
 
-    return (
-      <div>
-        <h2>Characters</h2>
-        <ul className="button-list fa-ul">{characterList}</ul>
-      </div>
-    );
-
+    // If some locations are found, show them.
+    if (filtered.length) {
+      return (
+        <div>
+          <h3>Characters</h3>
+          <ul className="link-list">
+            {filtered}
+          </ul>
+        </div>
+      );
+    } else {
+      return '';
+    }
   }
 }
 

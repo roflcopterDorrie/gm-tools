@@ -25,7 +25,8 @@ body {
 
 html, body, #root, .frame {
   height: calc(100% - 20px);
-  min-height: calc(100% - 20px)
+  min-height: calc(100% - 20px);
+  font-size: 0.95rem;
 }
 
 .card {
@@ -74,6 +75,24 @@ html, body, #root, .frame {
   font-weight: bold;
 }
 
+.card-minor {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: grey;
+}
+
+.card-minor-minor {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: grey;
+  display: block;
+  margin-bottom: -8px;
+}
+
+
 .card-footer {
   padding: 0;
   position: fixed;
@@ -86,21 +105,34 @@ html, body, #root, .frame {
   margin-right: 3px;
 }
 
-.card .locations__title {
+.card h3 {
   font-weight: bold;
   font-size: 24px;
   font-family: 'BaskervaldADFStd';
   color: #822000;
 }
 
-ul.button-list {
-  margin-left: 24px;
+ul.link-list {
+  margin: 0;
+  padding: 0;
 }
 
-ul.button-list button{
+button.link {
   border: none;
   background: none;
-  padding: 0;
-  margin: 0;
-  text-decoration: underline;
+  padding: 5px 0;
+}
+
+h3 button.link {
+  font-size: 1rem;
+  padding: 0 10px;
+  color: #822000;
+}
+
+.card-minor button.link {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: grey;
 }

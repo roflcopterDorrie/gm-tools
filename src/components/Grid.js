@@ -37,7 +37,7 @@ class Grid extends React.Component {
   static get defaultProps() {
     return {
       className: "layout",
-      cols: { lg: 6, md: 10, sm: 6, xs: 4, xxs: 2 },
+      cols: { lg: 8, md: 10, sm: 6, xs: 4, xxs: 2 },
       rowHeight: 100,
       draggableHandle: ".card-header"
     };
@@ -58,6 +58,8 @@ class Grid extends React.Component {
             deleteCard={this.deleteCard}
             updateData={this.props.updateData}
             getAllDataByType={this.props.getAllDataByType}
+            getData={this.props.getData}
+            addData={this.props.addData}
           />
           <span className="card-close" onClick={(e) => this.closeCard(el.grid.i)}><i className="fas fa-times"></i></span>
         </div>
@@ -74,8 +76,8 @@ class Grid extends React.Component {
             i: 'n' + this.state.keyCounter,
             x: 0,
             y: 0,
-            w: 1,
-            h: 3,
+            w: 2,
+            h: 4,
           },
           component: {id:id, type:type}
         }),
@@ -84,8 +86,8 @@ class Grid extends React.Component {
     }
   }
 
-  newCard = (type, parentId) => {
-    this.showCard(type, this.props.addData(type, parentId));
+  newCard = (type, parentId, parentType) => {
+    this.showCard(type, this.props.addData(type, parentId, parentType));
   }
 
   deleteCard = (type, id) => {

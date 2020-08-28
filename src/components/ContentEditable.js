@@ -3,7 +3,7 @@ import React from "react";
 class ContentEditable extends React.Component {
 
   onBlur = (evt) => {
-    this.props.onBlur(this.props.name, evt.target.innerText.trim());
+    this.props.onBlur(this.props.id || null, this.props.name, evt.target.innerText.trim());
   };
 
   render() {

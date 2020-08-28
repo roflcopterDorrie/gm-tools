@@ -7,9 +7,10 @@ class LocationList extends React.PureComponent {
     const filteredLocations = this.props.locations.reduce((accumulator, location, delta) => {
       if (location.parentId === this.props.parentId) {
         accumulator.push(<li key={delta}>
-          <span className="fa-li"><i className="fas fa-globe-americas"></i></span>
+          <span className="card-minor-minor">{location.type}</span>
+          <i className="fas fa-globe-americas"></i>&nbsp;
           <button
-            className="location"
+            className="link"
             onClick={() => this.props.showCard('Location', location.id)}>
               {location.name}
           </button>
@@ -22,8 +23,8 @@ class LocationList extends React.PureComponent {
     if (filteredLocations.length) {
       return (
         <div>
-          <h2 className="locations__title">Locations</h2>
-          <ul className="button-list fa-ul">
+          <h3>Locations</h3>
+          <ul className="link-list">
             {filteredLocations}
           </ul>
         </div>

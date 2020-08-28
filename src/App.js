@@ -14,6 +14,7 @@ class App extends React.Component {
         locations: [],
         characters: [],
         quests: [],
+        interactions: [],
         nextId: 1
       }
     };
@@ -28,6 +29,12 @@ class App extends React.Component {
   getDataStore = (type) => {
     if (type === 'Location') {
       return 'locations';
+    } else if (type === 'Character') {
+      return 'characters';
+    } else if (type === 'Interaction') {
+      return 'interactions';
+    } else if (type === 'Quest') {
+      return 'quests';
     }
     return '';
   }
@@ -51,8 +58,9 @@ class App extends React.Component {
   }
 
   updateData = (id, type, name, value) => {
+    console.log(id + type + name + value)
     let dataStore = this.getDataStore(type);
-    for (const delta in this.state.data[dataStore]) {
+    for (let delta in this.state.data[dataStore]) {
       if (this.state.data[dataStore][delta].id === id) {
         let stateCopy = JSON.parse(JSON.stringify(this.state));
         stateCopy.data[dataStore][delta][name] = value;
@@ -71,18 +79,19 @@ class App extends React.Component {
     localStorage.setItem("gm-tools-data", JSON.stringify(stateCopy.data));
   }
 
-  addData = (type, parentId) => {
+  addData = (type, parentId, parentType) => {
     let dataStore = this.getDataStore(type);
-    let nextId = this.state.data[dataStore].length + 1;
     let stateCopy = JSON.parse(JSON.stringify(this.state));
+    stateCopy.data.nextId++;
     stateCopy.data[dataStore].push({
-      id: nextId,
+      id: stateCopy.data.nextId,
       parentId: parentId ? parentId : null,
+      parentType: parentType ? parentType : null,
       name: 'New ' + type
     });
     this.setState(stateCopy);
     localStorage.setItem("gm-tools-data", JSON.stringify(stateCopy.data));
-    return nextId;
+    return stateCopy.data.nextId;
   }
 
   render() {
