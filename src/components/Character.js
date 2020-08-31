@@ -39,7 +39,7 @@ class Character extends Card {
             name="role"
             content={this.props.data.role || ''}
             placeholder="Job/role"
-            className="card-minor"
+            className={["card-minor"]}
           />
           {parentLocation}
           <ContentEditable
@@ -48,7 +48,7 @@ class Character extends Card {
             name="name"
             content={this.props.data.name || ''}
             placeholder="Name"
-            className="card-title"
+            className={["card-title"]}
           />
           <ContentEditable
             tag="p"

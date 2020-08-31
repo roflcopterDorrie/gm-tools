@@ -5,7 +5,7 @@ class CharacterList extends React.PureComponent {
   render() {
 
     const filtered = this.props.characters.reduce((accumulator, character, delta) => {
-      if (character.parentId === this.props.parentId && character.parentType == this.props.parentType) {
+      if (character.parentId === this.props.parentId && character.parentType === this.props.parentType) {
         accumulator.push(<li key={delta}>
           <span className="card-minor-minor">{character.role}</span>
           <i className="fas fa-user-alt"></i>&nbsp;
