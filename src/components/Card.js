@@ -26,6 +26,10 @@ class Card extends React.PureComponent {
         toolbar.push(
           <button onClick={() => this.props.deleteCard(this.componentName, this.props.data.id)}><i className="fas fa-trash-alt"></i></button>
         );
+      } else if (tools[type] === 'encounter-map') {
+        toolbar.push(
+          <button onClick={() => window.open('/encounter-map/' + this.props.data.id)}><i className="fas fa-play"></i></button>
+        );
       }
     }
     return toolbar;

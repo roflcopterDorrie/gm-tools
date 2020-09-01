@@ -21,7 +21,7 @@
 
 .single-line[contenteditable=true] {
   white-space: nowrap;
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .hidden {
@@ -33,13 +33,13 @@ body {
 }
 
 html, body, #root, .frame {
-  height: calc(100% - 20px);
-  min-height: calc(100% - 20px);
   font-size: 0.95rem;
+  margin: 0;
 }
 
-.grid {
+  .grid {
   width: calc(100% - 60px);
+  margin: 10px;
 }
 
 .card {
@@ -230,4 +230,29 @@ h3 button.link {
 
 .search-results li {
   margin-bottom: 6px;
+}
+
+body.encounter-map {
+  overflow: hidden;
+}
+.encounter-grid {
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+.encounter-grid__row {
+  display: flex;
+  overflow: hidden;
+}
+
+.encounter-grid__item {
+  box-shadow:
+    2px 0 0 0 black,
+    0 2px 0 0 black,
+    2px 2px 0 0 black,   /* Just to fix the corner */
+    2px 0 0 0 black inset,
+    0 2px 0 0 black inset;
+  border-collapse: true;
+  flex: 0 0 auto;
+  overflow: hidden;
 }

@@ -1,6 +1,14 @@
 import React from "react";
-import Grid from './components/Grid';
+import Grid from 'components/Grid';
+import EncounterMap from 'components/EncounterMap';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  useParams
+} from "react-router-dom";
 import _ from "lodash";
+import monsters from 'data/monsters.json';
 import '@fortawesome/fontawesome-free/js/all.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
@@ -24,19 +32,28 @@ class App extends React.Component {
     this.getAllData = this.getAllData.bind(this);
     this.addData = this.addData.bind(this);
     this.deleteData = this.deleteData.bind(this);
+    this.open = this.open.bind(this);
+    this.getDataStoreTypes = this.getDataStoreTypes.bind(this);
   }
 
   getDataStore = (type) => {
-    if (type === 'Location') {
-      return 'locations';
-    } else if (type === 'Character') {
-      return 'characters';
-    } else if (type === 'Interaction') {
-      return 'interactions';
-    } else if (type === 'Quest') {
-      return 'quests';
+    const stores = this.getDataStoreTypes();
+    for (let store in stores) {
+      if (stores[store].component === type) {
+        return stores[store].store;
+      }
     }
-    return '';
+    return null;
+  }
+
+  getDataStoreTypes = () => {
+    return [
+      {component: 'Location', store: 'locations', icon: 'fa-globe-americas'},
+      {component: 'Character', store: 'characters', icon: 'fa-user-alt'},
+      {component: 'Quest', store: 'quests', icon: 'fa-scroll'},
+      {component: 'Encounter', store: 'encounters', icon: 'fa-skull-crossbones'},
+      {component: 'Interaction', store: 'interactions', icon: 'fa-people-arrows'},
+    ];
   }
 
   getAllData = () => {
@@ -44,6 +61,7 @@ class App extends React.Component {
   }
 
   getData = (type, id) => {
+    id = parseInt(id);
     let dataStore = this.getDataStore(type);
     for (const delta in this.state.data[dataStore]) {
       if (this.state.data[dataStore][delta].id === id) {
@@ -52,13 +70,16 @@ class App extends React.Component {
     }
   }
 
+  getStaticData = () => {
+    return {"monsters":monsters};
+  }
+
   getAllDataByType = (type) => {
     let dataStore = this.getDataStore(type);
     return this.state.data[dataStore];
   }
 
   updateData = (id, type, name, value) => {
-    console.log(id + type + name + value)
     let dataStore = this.getDataStore(type);
     for (let delta in this.state.data[dataStore]) {
       if (this.state.data[dataStore][delta].id === id) {
@@ -94,21 +115,60 @@ class App extends React.Component {
     return stateCopy.data.nextId;
   }
 
+  open = (style, type, id, field) => {
+    if (style === 'image') {
+      const imageData = this.getData(type, id);
+      if (imageData) {
+        let w = window.open('about:blank');
+        let image = new Image();
+        image.src = imageData[field];
+        image.style = "width: 100%";
+        setTimeout(function(){
+          w.document.write(image.outerHTML);
+        }, 0);
+      }
+    }
+  }
+
   render() {
-      return (
-        <main>
-          <Grid
-            getData={this.getData}
-            getAllDataByType={this.getAllDataByType}
-            updateData={this.updateData}
-            getAllData={this.getAllData}
-            addData={this.addData}
-            deleteData={this.deleteData}
-          />
-        </main>
+    return (
+      <main>
+        <Router>
+          <Switch>
+            <Route path="/encounter-map/:id" children={<EncounterMapRoute getData={this.getData}/>}/>
+            <Route path="/">
+              <Grid
+                getData={this.getData}
+                getAllDataByType={this.getAllDataByType}
+                updateData={this.updateData}
+                getAllData={this.getAllData}
+                getStaticData={this.getStaticData}
+                addData={this.addData}
+                deleteData={this.deleteData}
+                getDataStoreTypes={this.getDataStoreTypes}
+                open={this.open}
+              />
+            </Route>
+          </Switch>
+        </Router>
+      </main>
     );
 
   }
 }
+
+function EncounterMapRoute(props) {
+  // We can use the `useParams` hook here to access
+  // the dynamic pieces of the URL.
+  let { id } = useParams();
+
+  return (
+    <EncounterMap
+      getData={props.getData}
+      id={id}
+    />
+  );
+}
+
 
 export default App;

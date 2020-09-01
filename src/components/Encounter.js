@@ -79,6 +79,9 @@ class Encounter extends Card {
             placeholder="none"
           />
         </div>
+        <div className="card-footer">
+          {this.toolbar(['encounter-map'])}
+        </div>
       </section>
     );
 

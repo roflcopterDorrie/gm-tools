@@ -11,7 +11,7 @@ class MonsterList extends React.PureComponent {
   getMonsterList = (selectedId, delta, count) => {
     return <div>
       <select onChange={(e) => {this.updateData(delta, e.target.value)}} value={selectedId}>
-        {this.props.monsterList.map((monster, delta) => {
+        {this.props.monsterList.map((monster) => {
           return <option value={monster.id}>{monster.name}</option>
         })}
       </select> x&nbsp;
