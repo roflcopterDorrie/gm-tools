@@ -241,7 +241,6 @@ body.encounter-map {
 }
 
 .encounter-grid__row {
-  display: flex;
   overflow: hidden;
 }
 
@@ -252,7 +251,28 @@ body.encounter-map {
     2px 2px 0 0 black,   /* Just to fix the corner */
     2px 0 0 0 black inset,
     0 2px 0 0 black inset;
-  border-collapse: true;
-  flex: 0 0 auto;
-  overflow: hidden;
+  background: transparent;
+}
+
+.encounter-grid__item--fog {
+  background: black;
+  box-shadow:
+    2px 0 0 0 grey,
+    0 2px 0 0 grey,
+    2px 2px 0 0 grey,   /* Just to fix the corner */
+    2px 0 0 0 grey inset,
+    0 2px 0 0 grey inset;
+}
+
+.square {
+  stroke: rgb(107, 107, 107);
+  fill: black;
+}
+
+.square.reveal {
+  fill: transparent;
+}
+
+.square.tempReveal {
+  fill: rgb(107, 107, 107, 0.5);
 }

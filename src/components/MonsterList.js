@@ -72,9 +72,9 @@ class MonsterList extends React.PureComponent {
 
   render() {
 
-    let selectedMonsters = this.props.selectedMonsters.map((monster, delta) => {
+    let selectedMonsters = this.props.selectedMonsters ? this.props.selectedMonsters.map((monster, delta) => {
       return this.getMonsterList(monster.id, delta, monster.count);
-    })
+    }) : [];
 
     // If some locations are found, show them.
     return (

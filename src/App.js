@@ -80,6 +80,7 @@ class App extends React.Component {
   }
 
   updateData = (id, type, name, value) => {
+    id = parseInt(id);
     let dataStore = this.getDataStore(type);
     for (let delta in this.state.data[dataStore]) {
       if (this.state.data[dataStore][delta].id === id) {
@@ -135,7 +136,7 @@ class App extends React.Component {
       <main>
         <Router>
           <Switch>
-            <Route path="/encounter-map/:id" children={<EncounterMapRoute getData={this.getData}/>}/>
+            <Route path="/encounter-map/:id" children={<EncounterMapRoute getData={this.getData} updateData={this.updateData}/>}/>
             <Route path="/">
               <Grid
                 getData={this.getData}
@@ -165,6 +166,7 @@ function EncounterMapRoute(props) {
   return (
     <EncounterMap
       getData={props.getData}
+      updateData={props.updateData}
       id={id}
     />
   );

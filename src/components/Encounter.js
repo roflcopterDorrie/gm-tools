@@ -80,7 +80,7 @@ class Encounter extends Card {
           />
         </div>
         <div className="card-footer">
-          {this.toolbar(['encounter-map'])}
+          {this.toolbar(['encounter-map', 'delete'])}
         </div>
       </section>
     );
