@@ -27,8 +27,15 @@ class Card extends React.PureComponent {
           <button onClick={() => this.props.deleteCard(this.componentName, this.props.data.id)}><i className="fas fa-trash-alt"></i></button>
         );
       } else if (tools[type] === 'encounter-map') {
+        if (this.props.data.map) {
+          toolbar.push(
+            <button onClick={() => window.open('/encounter-map/' + this.props.data.id)}><i className="fas fa-map"></i></button>
+          );
+        }
+      } else if (tools[type] === 'encounter-tracker') {
         toolbar.push(
-          <button onClick={() => window.open('/encounter-map/' + this.props.data.id)}><i className="fas fa-play"></i></button>
+          <button onClick={() => window.open('/encounter-tracker/' + this.props.data.id)}><i className="fas fa-skull-crossbones"></i></button>
+        );
       } else if (tools[type] === 'add-player-stat') {
         toolbar.push(
           <button onClick={(e) => this.props.addData('PlayerStat')}><i className="fas fa-plus"></i></button>

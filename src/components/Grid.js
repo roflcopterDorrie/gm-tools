@@ -5,6 +5,7 @@ import Character from 'components/Character';
 import Quest from 'components/Quest';
 import Encounter from 'components/Encounter';
 import Search from 'components/Search';
+import PlayerStats from 'components/PlayerStats';
 import Toolbar from "components/Toolbar";
 import _ from "lodash";
 import 'react-grid-layout/css/styles.css';
@@ -18,7 +19,8 @@ const dataComponents = {
   Encounter: Encounter
 };
 const toolboxComponents = {
-  Search: Search
+  Search: Search,
+  PlayerStats: PlayerStats
 }
 
 class Grid extends React.Component {
@@ -88,6 +90,9 @@ class Grid extends React.Component {
             showCard={this.showCard}
             getData={this.props.getData}
             getDataStoreTypes={this.props.getDataStoreTypes}
+            updateData={this.props.updateData}
+            deleteData={this.props.deleteData}
+            addData={this.props.addData}
           />
           <span className="card-close" onClick={(e) => this.closeCard(el.grid.i)}><i className="fas fa-times"></i></span>
         </div>

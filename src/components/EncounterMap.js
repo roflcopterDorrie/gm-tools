@@ -9,7 +9,7 @@ class EncounterMap extends React.Component {
     super(props);
     let data = this.props.getData('Encounter', this.props.id);
     if (!data.grid) {
-      data.grid = {gridSize: 50, mapWidth: 2000, clearFog: false, fog: []};
+      data.grid = {gridSize: 125, mapWidth: 2000, clearFog: false, fog: []};
     }
     this.state = {data: data};
     this.revealToggle = true;
@@ -17,14 +17,13 @@ class EncounterMap extends React.Component {
   }
 
   componentDidMount() {
-    window.addEventListener('resize', this.updateWindowDimensions);
     document.getElementById('encounter-grid').addEventListener('mousedown', () => drag = true);
     document.addEventListener('mouseup', () => {drag = false; this.saveFog(this)});
-    this.drawGrid(this.state.data.grid);
-  }
 
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.updateWindowDimensions);
+    let stateCopy = JSON.parse(JSON.stringify(this.state));
+    stateCopy.data.grid.mapHeight = document.getElementById('encounter-grid').offsetHeight;
+    this.setState(stateCopy);
+    this.drawGrid(stateCopy.data.grid);
   }
 
   resetGrid = () => {
@@ -35,20 +34,21 @@ class EncounterMap extends React.Component {
     stateCopy.data.grid['mapWidth'] = mapWidth;
     stateCopy.data.grid['gridSize'] = gridSize;
     stateCopy.data.grid.fog = [];
+    stateCopy.data.grid.clearFog = false;
     this.setState(stateCopy);
     this.drawGrid(stateCopy.data.grid);
   }
 
   drawGrid = (grid) => {
     let size = grid.gridSize;
-    let rows = Math.ceil(window.innerHeight / size);
-    let cols = Math.ceil(window.innerWidth / size);
+    let rows = Math.ceil(grid.mapHeight / size);
+    let cols = Math.ceil(grid.mapWidth / size);
     let fogs = grid.fog;
     let clearFog = grid.clearFog;
 
     function gridData() {
       var data = [];
-      var xpos = 1; //starting xpos and ypos at 1 so the stroke will show when we make the grid below
+      var xpos = 1;
       var ypos = 1;
       var width = size;
       var height = size;
@@ -56,7 +56,7 @@ class EncounterMap extends React.Component {
       // iterate for rows
 
       for (var row = 0; row < rows; row++) {
-        data.push( [] );
+        data.push([]);
         // iterate for cells/columns inside rows
         for (var col = 0; col < cols; col++) {
           let reveal = true;
@@ -181,11 +181,8 @@ class EncounterMap extends React.Component {
         <div
           id="encounter-grid"
           className="encounter-grid"
-          style={{
-            backgroundImage: 'url('+this.state.data.map+')',
-            backgroundSize: this.state.data.grid.mapWidth + 'px'
-          }}
         >
+          <img src={this.state.data.map} width={this.state.data.grid.mapWidth + 'px'}/>
           <svg id="encounter-grid__svg"></svg>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import Grid from 'components/Grid';
 import EncounterMap from 'components/EncounterMap';
+import EncounterTracker from 'components/EncounterTracker';
 import {
   BrowserRouter as Router,
   Switch,
@@ -138,6 +139,7 @@ class App extends React.Component {
         <Router>
           <Switch>
             <Route path="/encounter-map/:id" children={<EncounterMapRoute getData={this.getData} updateData={this.updateData}/>}/>
+            <Route path="/encounter-tracker/:id" children={<EncounterTrackerRoute getData={this.getData} updateData={this.updateData}/>}/>
             <Route path="/">
               <Grid
                 getData={this.getData}
@@ -166,6 +168,20 @@ function EncounterMapRoute(props) {
 
   return (
     <EncounterMap
+      getData={props.getData}
+      updateData={props.updateData}
+      id={id}
+    />
+  );
+}
+
+function EncounterTrackerRoute(props) {
+  // We can use the `useParams` hook here to access
+  // the dynamic pieces of the URL.
+  let { id } = useParams();
+
+  return (
+    <EncounterTracker
       getData={props.getData}
       updateData={props.updateData}
       id={id}
