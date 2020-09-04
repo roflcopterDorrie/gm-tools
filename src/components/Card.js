@@ -29,6 +29,9 @@ class Card extends React.PureComponent {
       } else if (tools[type] === 'encounter-map') {
         toolbar.push(
           <button onClick={() => window.open('/encounter-map/' + this.props.data.id)}><i className="fas fa-play"></i></button>
+      } else if (tools[type] === 'add-player-stat') {
+        toolbar.push(
+          <button onClick={(e) => this.props.addData('PlayerStat')}><i className="fas fa-plus"></i></button>
         );
       }
     }

@@ -54,22 +54,6 @@ class MonsterList extends React.PureComponent {
     this.props.updateData(this.props.parentId, 'Encounter', 'monsters', selectedMonsters);
   }
 
-  componentDidMount() {
-    fetch('https://www.dndbeyond.com/monsters/drow', {
-      mode: 'no-cors'
-    })
-      .then(res => res.text())
-      .then(
-        (result) => {
-          console.log(result);
-        },
-      )
-      .catch(function (err) {
-        // There was an error
-        console.warn('Something went wrong.', err);
-      });
-  }
-
   render() {
 
     let selectedMonsters = this.props.selectedMonsters ? this.props.selectedMonsters.map((monster, delta) => {

@@ -53,6 +53,7 @@ class App extends React.Component {
       {component: 'Quest', store: 'quests', icon: 'fa-scroll'},
       {component: 'Encounter', store: 'encounters', icon: 'fa-skull-crossbones'},
       {component: 'Interaction', store: 'interactions', icon: 'fa-people-arrows'},
+      {component: 'PlayerStat', store: 'playerStats', icon: 'fa-users'},
     ];
   }
 

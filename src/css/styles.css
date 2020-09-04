@@ -37,8 +37,8 @@ html, body, #root, .frame {
   margin: 0;
 }
 
-  .grid {
-  width: calc(100% - 60px);
+.grid {
+  width: calc(100% - 80px);
   margin: 10px;
 }
 
@@ -233,11 +233,19 @@ h3 button.link {
 }
 
 body.encounter-map {
-  overflow: hidden;
+  background-color: black;
+  color: white;
 }
 .encounter-grid {
-  overflow: hidden;
-  background-repeat: no-repeat;
+  position: relative;
+}
+
+#encounter-grid__svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-right: 2px solid rgb(107, 107, 107);
+  border-bottom: 2px solid rgb(107, 107, 107);
 }
 
 .encounter-grid__row {
@@ -275,4 +283,13 @@ body.encounter-map {
 
 .square.tempReveal {
   fill: rgb(107, 107, 107, 0.5);
+}
+
+table.playerStats th, table.playerStats td {
+  padding: 5px;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+table.playerStats th {
+  background: lightgrey;
 }
