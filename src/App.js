@@ -23,7 +23,9 @@ class App extends React.Component {
         locations: [],
         characters: [],
         quests: [],
+        encounters: [],
         interactions: [],
+        playerStats: [],
         nextId: 1
       }
     };

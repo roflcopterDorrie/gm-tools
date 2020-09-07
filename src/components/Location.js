@@ -18,18 +18,22 @@ class Location extends Card {
 
   render() {
 
-    const location = this.props.getData('Location', this.props.data.parentId);
     let parentLocation = '';
-    if (location) {
-      parentLocation = <span class="card-minor" style={{float: 'right'}}>
-        <i className="fas fa-globe-americas"></i>
-        &nbsp;
-        <button
-          className="link"
-          onClick={() => this.props.showCard('Location', location.id)}>
-            {location.name}
-        </button>
-      </span>
+
+    if (this.props.data) {
+      const parentLocationData = this.props.getData('Location', this.props.data.parentId);
+
+      if (parentLocationData) {
+        parentLocation = <span class="card-minor" style={{float: 'right'}}>
+          <i className="fas fa-globe-americas"></i>
+          &nbsp;
+          <button
+            className="link"
+            onClick={() => this.props.showCard('Location', parentLocationData.id)}>
+              {parentLocationData.name}
+          </button>
+        </span>
+      }
     }
 
     let mapPreview = this.props.data.map ? <button className="link" onClick={(e) => this.props.open('image', 'Location', this.props.data.id, 'map')}><img src={this.props.data.map} className="map-preview"/></button> : '';

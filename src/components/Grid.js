@@ -28,16 +28,7 @@ class Grid extends React.Component {
   constructor(props) {
     super(props);
     const layout = JSON.parse(localStorage.getItem('gm-tools-layout')) || {
-      layout: [{
-        grid: {
-          i: 'n1',
-          x: 0,
-          y: 0,
-          w: 6,
-          h: 3,
-        },
-        component: {id:"1", type:"Location"}
-      }],
+      layout: [],
       keyCounter: 2
     };
     this.state = {
@@ -170,8 +161,17 @@ class Grid extends React.Component {
   }
 
   render() {
+    if (!this.state.layout.layout.length) {
+      document.body.classList.add('empty');
+    } else {
+      document.body.classList.remove('empty');
+    }
     return (
       <div className="frame">
+        <div className="start">
+          <i className="fas fa-plus"></i>
+          <div>Add a card using the toolbar</div>
+        </div>
         <div className="grid">
           <ResponsiveReactGridLayout
               {...this.props}
