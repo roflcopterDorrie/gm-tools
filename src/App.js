@@ -26,7 +26,17 @@ class App extends React.Component {
         encounters: [],
         interactions: [],
         playerStats: [],
+        timeline: [],
         nextId: 1
+      },
+      config: JSON.parse(localStorage.getItem('gm-tools-config')) || {
+        datetime: {
+          minute: 0,
+          hour: 0,
+          day: 1,
+          month: 1,
+          year: 1370
+        }
       }
     };
     this.getData = this.getData.bind(this);
@@ -37,6 +47,7 @@ class App extends React.Component {
     this.deleteData = this.deleteData.bind(this);
     this.open = this.open.bind(this);
     this.getDataStoreTypes = this.getDataStoreTypes.bind(this);
+    this.updateConfig = this.updateConfig.bind(this);
   }
 
   getDataStore = (type) => {
@@ -57,11 +68,16 @@ class App extends React.Component {
       {component: 'Encounter', store: 'encounters', icon: 'fa-skull-crossbones'},
       {component: 'Interaction', store: 'interactions', icon: 'fa-people-arrows'},
       {component: 'PlayerStat', store: 'playerStats', icon: 'fa-users'},
+      {component: 'Timeline', store: 'events', icon: 'fa-clock'},
     ];
   }
 
   getAllData = () => {
     return this.state.data;
+  }
+
+  getConfig = () => {
+    return this.state.config;
   }
 
   getData = (type, id) => {
@@ -75,7 +91,7 @@ class App extends React.Component {
   }
 
   getStaticData = () => {
-    return {"monsters":monsters};
+    return {"monsters": monsters};
   }
 
   getAllDataByType = (type) => {
@@ -105,16 +121,18 @@ class App extends React.Component {
     localStorage.setItem("gm-tools-data", JSON.stringify(stateCopy.data));
   }
 
-  addData = (type, parentId, parentType) => {
+  addData = (type, parentId, parentType, data) => {
     let dataStore = this.getDataStore(type);
     let stateCopy = JSON.parse(JSON.stringify(this.state));
     stateCopy.data.nextId++;
-    stateCopy.data[dataStore].push({
+    const dataInit = {
       id: stateCopy.data.nextId,
       parentId: parentId ? parentId : null,
       parentType: parentType ? parentType : null,
       name: 'New ' + type
-    });
+    };
+    const dataMerged = {...dataInit, ...data};
+    stateCopy.data[dataStore].push(dataMerged);
     this.setState(stateCopy);
     localStorage.setItem("gm-tools-data", JSON.stringify(stateCopy.data));
     return stateCopy.data.nextId;
@@ -135,6 +153,13 @@ class App extends React.Component {
     }
   }
 
+  updateConfig = (name, value) => {
+    let stateCopy = JSON.parse(JSON.stringify(this.state));
+    stateCopy.config[name] = value;
+    this.setState(stateCopy);
+    localStorage.setItem("gm-tools-config", JSON.stringify(stateCopy.config));
+  }
+
   render() {
     return (
       <main>
@@ -153,6 +178,8 @@ class App extends React.Component {
                 deleteData={this.deleteData}
                 getDataStoreTypes={this.getDataStoreTypes}
                 open={this.open}
+                getConfig={this.getConfig}
+                updateConfig={this.updateConfig}
               />
             </Route>
           </Switch>

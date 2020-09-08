@@ -19,7 +19,7 @@ class Search extends Card {
     let filtered = [];
     let dataStoreTypes = this.props.getDataStoreTypes();
     for (let key in dataStoreTypes) {
-      if (!['Interaction', 'PlayerStat'].includes(dataStoreTypes[key].component)) {
+      if (!['Interaction', 'PlayerStat', 'Timeline'].includes(dataStoreTypes[key].component)) {
         if (this.props.allData[dataStoreTypes[key].store]) {
           filtered.push(this.props.allData[dataStoreTypes[key].store].reduce((accumulator, item, delta) => {
             if (item.name.toLowerCase().includes(this.state.search.toLowerCase())) {
@@ -45,10 +45,11 @@ class Search extends Card {
           <span className="card__type"><i className="fas fa-search"></i> Search</span>
         </div>
 
-        <div className="card-body">
-          <div className="search-box">
+        <div className="card-top">
             <input type="text" onChange={this.search} placeholder="Search"/>
           </div>
+        <div className="card-body card-body--with-top">
+
           <ul className="fa-ul search-results">
             {filtered}
           </ul>

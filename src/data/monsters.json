@@ -8,5 +8,10 @@
     "id": 2,
     "name": "Giant Spider",
     "dndbeyond": "https://www.dndbeyond.com/monsters/giant-spider"
+  },
+  {
+    "id": 3,
+    "name": "White Dragon Wyrmling ",
+    "dndbeyond": "https://www.dndbeyond.com/monsters/white-dragon-wyrmling"
   }
 ]

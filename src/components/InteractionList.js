@@ -12,18 +12,29 @@ class InteractionList extends React.PureComponent {
     this.props.addData("Interaction", this.props.parentId, this.props.parentType);
   }
 
+  deleteInteraction = (id) => {
+    this.props.deleteData('Interaction', id);
+  }
+
   render() {
 
     const filtered = this.props.allData['interactions'].reduce((accumulator, interaction, delta) => {
       if (interaction.parentId === this.props.parentId) {
-        accumulator.push(<ContentEditable
-          tag="p"
-          onBlur={this.updateData}
-          name="name"
-          content={interaction.name || ''}
-          placeholder="name"
-          id={interaction.id}
-        />);
+        accumulator.push(
+        <div style={{position: 'relative'}}>
+          <ContentEditable
+            tag="p"
+            onBlur={this.updateData}
+            name="name"
+            content={interaction.name || ''}
+            placeholder="name"
+            id={interaction.id}
+          />
+          <button style={{position: 'absolute', right: 0, top: 0}} className="link" onClick={(e) => {this.deleteInteraction(interaction.id)}}>
+            <i className="fas fa-times"></i>
+          </button>
+        </div>
+        );
       }
       return accumulator;
     }, []);

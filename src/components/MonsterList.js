@@ -15,7 +15,7 @@ class MonsterList extends React.PureComponent {
           return <option value={monster.id}>{monster.name}</option>
         })}
       </select> x&nbsp;
-      <input type="number" value={count} onChange={(e) => {this.updateData(delta, null, e.target.value)}}/>
+      <input type="number" className="monster-count" value={count} onChange={(e) => {this.updateData(delta, null, e.target.value)}}/>
       &nbsp;
       <button className="link" onClick={(e) => {this.deleteMonster(delta)}}>
         <i className="fas fa-times"></i>

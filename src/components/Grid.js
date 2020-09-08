@@ -7,6 +7,7 @@ import Encounter from 'components/Encounter';
 import Search from 'components/Search';
 import PlayerStats from 'components/PlayerStats';
 import Toolbar from "components/Toolbar";
+import Timeline from "components/Timeline";
 import _ from "lodash";
 import 'react-grid-layout/css/styles.css';
 import 'react-resizable/css/styles.css';
@@ -20,7 +21,8 @@ const dataComponents = {
 };
 const toolboxComponents = {
   Search: Search,
-  PlayerStats: PlayerStats
+  PlayerStats: PlayerStats,
+  Timeline: Timeline
 }
 
 class Grid extends React.Component {
@@ -64,6 +66,7 @@ class Grid extends React.Component {
             getAllDataByType={this.props.getAllDataByType}
             getData={this.props.getData}
             addData={this.props.addData}
+            deleteData={this.props.deleteData}
             open={this.props.open}
           />
           <span className="card-close" onClick={(e) => this.closeCard(el.grid.i)}><i className="fas fa-times"></i></span>
@@ -84,6 +87,8 @@ class Grid extends React.Component {
             updateData={this.props.updateData}
             deleteData={this.props.deleteData}
             addData={this.props.addData}
+            getConfig={this.props.getConfig}
+            updateConfig={this.props.updateConfig}
           />
           <span className="card-close" onClick={(e) => this.closeCard(el.grid.i)}><i className="fas fa-times"></i></span>
         </div>

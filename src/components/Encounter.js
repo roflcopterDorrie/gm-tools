@@ -2,6 +2,8 @@ import React from "react";
 import Card from "components/Card";
 import MonsterList from "components/MonsterList";
 import ContentEditable from "components/ContentEditable";
+import ImageUploader from 'react-images-upload';
+import { image } from "d3";
 
 class Encounter extends Card {
 
@@ -9,10 +11,49 @@ class Encounter extends Card {
     super(props);
     this.componentName = 'Encounter';
     this.state = {mapInput: false};
+    this.onDrop = this.onDrop.bind(this);
   }
 
   changeMap = () => {
     this.setState({mapInput: !this.state.mapInput});
+  }
+
+  // Takes a data URI and returns the Data URI corresponding to the resized image at the wanted size.
+  onDrop = (picture, pictureDataURLs) => {
+    const datas = pictureDataURLs[0];
+    let wantedWidth = 200;
+    let wantedHeight = 200;
+
+    // We create an image to receive the Data URI
+    var img = document.createElement('img');
+
+    const id = this.props.data.id;
+    const updateData = this.updateData;
+
+    // When the event "onload" is triggered we can resize the image.
+    img.onload = function() {
+      if (img.width > img.height) {
+        wantedHeight = wantedHeight * (img.height / img.width);
+      } else {
+        wantedWidth = wantedWidth * (img.width / img.height);
+      }
+
+      // We create a canvas and get its context.
+      var canvas = document.createElement('canvas');
+      var ctx = canvas.getContext('2d');
+
+      // We set the dimensions at the wanted size.
+      canvas.width = wantedWidth;
+      canvas.height = wantedHeight;
+
+      // We resize the image with the canvas method drawImage();
+      ctx.drawImage(this, 0, 0, wantedWidth, wantedHeight);
+
+      updateData(id, 'map', canvas.toDataURL('image/jpeg', 60));
+    };
+
+    // We put the Data URI in the image's src attribute
+    img.src = datas;
   }
 
   render() {
@@ -37,14 +78,18 @@ class Encounter extends Card {
             <button className="link" onClick={this.changeMap}>
               <i className="fas fa-map"></i> Map
             </button>
-            <ContentEditable
-              tag="p"
-              onBlur={this.updateData}
-              name="map"
-              content={this.props.data.map || ''}
-              placeholder="Image URL"
-              className={["single-line", !this.state.mapInput ? 'hidden' : '']}
-            />
+            <span className={!this.state.mapInput ? 'hidden' : ''}>
+              <ImageUploader
+                withIcon={true}
+                buttonText='Choose images'
+                onChange={this.onDrop}
+                imgExtension={['.jpg', '.gif', '.png', '.gif']}
+                maxFileSize={524288000}
+                singleImage={true}
+                withLabel={false}
+                withIcon={false}
+              />
+            </span>
           </div>
           <ContentEditable
             tag="p"

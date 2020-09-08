@@ -77,6 +77,7 @@ class Character extends Card {
             parentId={this.props.data.id}
             parentType={this.componentName}
             updateData={this.props.updateData}
+            deleteData={this.props.deleteData}
             addData={this.props.addData}
             allData={this.props.allData}
           />

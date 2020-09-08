@@ -1,5 +1,6 @@
 import React from "react";
 import * as d3 from "d3";
+import ImageUploader from 'react-images-upload';
 
 let drag = false;
 
@@ -11,9 +12,10 @@ class EncounterMap extends React.Component {
     if (!data.grid) {
       data.grid = {gridSize: 125, mapWidth: 2000, clearFog: false, fog: []};
     }
-    this.state = {data: data};
+    this.state = {data: data, map: ''};
     this.revealToggle = true;
     document.body.classList.add('encounter-map');
+    this.onDrop = this.onDrop.bind(this);
   }
 
   componentDidMount() {
@@ -32,6 +34,7 @@ class EncounterMap extends React.Component {
 
     let stateCopy = JSON.parse(JSON.stringify(this.state));
     stateCopy.data.grid['mapWidth'] = mapWidth;
+    stateCopy.data.grid['mapHeight'] = document.getElementById('encounter-grid').offsetHeight;
     stateCopy.data.grid['gridSize'] = gridSize;
     stateCopy.data.grid.fog = [];
     stateCopy.data.grid.clearFog = false;
@@ -165,6 +168,12 @@ class EncounterMap extends React.Component {
     document.getElementById('encounter-grid__controls').setAttribute('style', 'display: none;');
   }
 
+  onDrop(picture, pictureDataURLs) {
+    let stateCopy = JSON.parse(JSON.stringify(this.state));
+    stateCopy.map = pictureDataURLs;
+    this.setState(stateCopy);
+  }
+
   render() {
     return (
       <div>
@@ -176,13 +185,25 @@ class EncounterMap extends React.Component {
           <input type="submit" value="Reset grid" onClick={this.resetGrid}/>
           <input type="submit" value="Toggle fog" onClick={this.toggleFog}/>
           <input type="submit" value="Clear fog" onClick={this.clearFog}/>
+          <input type="submit" value="Hide overflow" onClick={()=>{document.body.classList.add('encounter-map--hide-overflow')}}/>
           <input type="submit" value="Hide controls" onClick={this.hideToolbar}/>
+          <ImageUploader
+            withIcon={true}
+            buttonText='Choose images'
+            onChange={this.onDrop}
+            imgExtension={['.jpg', '.gif', '.png', '.gif']}
+            maxFileSize={524288000}
+            singleImage={true}
+            withLabel={false}
+            withIcon={false}
+            buttonText='Load image'
+          />
         </div>
         <div
           id="encounter-grid"
           className="encounter-grid"
         >
-          <img src={this.state.data.map} width={this.state.data.grid.mapWidth + 'px'}/>
+          <img src={this.state.map} width={this.state.data.grid.mapWidth + 'px'}/>
           <svg id="encounter-grid__svg"></svg>
         </div>
       </div>
