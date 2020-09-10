@@ -6,9 +6,27 @@ class Card extends React.PureComponent {
     this.props.updateData(this.props.data.id, this.componentName, name, value);
   };
 
+  updateDataLogEvent = (id, name, value) => {
+    this.updateData(id, name, value);
+    this.logEvent();
+  };
+
+  logEvent = () => {
+    let logEvent = true;
+    for (const index in this.props.allData['events']) {
+      if (this.props.allData['events'][index].parentId === this.props.data.id) {
+        logEvent = false;
+        break;
+      }
+    }
+    if (logEvent) {
+      this.props.addEvent(this.props.data.id, this.componentName);
+    }
+  }
+
   toolbar = tools => {
     let toolbar = [];
-    tools = tools || ['add-location', 'add-character', 'add-encounter', 'delete'];
+    tools = tools || ['delete'];
     for (let type in tools) {
       if (tools[type] === 'add-location') {
         toolbar.push(
@@ -40,9 +58,21 @@ class Card extends React.PureComponent {
         toolbar.push(
           <button className="icon" onClick={(e) => this.props.addData('PlayerStat')}><i className="fas fa-fw fa-plus"></i></button>
         );
-      } else if (tools[type] === 'event-camp') {
+      } else if (tools[type] === 'event-rest-long') {
         toolbar.push(
-          <button className="icon" onClick={(e) => this.addEvent('camp')}><i className="fas fa-fw fa-campground"></i></button>
+          <button className="icon" onClick={(e) => this.props.addEvent(-1, 'Long rest')}><i className="fas fa-fw fa-campground"></i>L</button>
+        );
+      } else if (tools[type] === 'event-rest-short') {
+        toolbar.push(
+          <button className="icon" onClick={(e) => this.props.addEvent(-1, 'Short rest')}><i className="fas fa-fw fa-campground"></i>S</button>
+        );
+      } else if (tools[type] === 'event-travel') {
+        toolbar.push(
+          <button className="icon" onClick={(e) => this.props.addEvent(-1, 'Travel')}><i className="fas fa-fw fa-route"></i></button>
+        );
+      } else if (tools[type] === 'event-location-arrive') {
+        toolbar.push(
+          <button className="icon" onClick={(e) => this.props.addEvent(this.props.data.id, 'Location')}><i className="fas fa-fw fa-map-marked-alt"></i></button>
         );
       }
     }

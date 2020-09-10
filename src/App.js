@@ -26,7 +26,7 @@ class App extends React.Component {
         encounters: [],
         interactions: [],
         playerStats: [],
-        timeline: [],
+        events: [],
         nextId: 1
       },
       config: JSON.parse(localStorage.getItem('gm-tools-config')) || {
@@ -48,13 +48,15 @@ class App extends React.Component {
     this.open = this.open.bind(this);
     this.getDataStoreTypes = this.getDataStoreTypes.bind(this);
     this.updateConfig = this.updateConfig.bind(this);
+    this.addEvent = this.addEvent.bind(this);
+    this.getDataStore = this.getDataStore.bind(this);
   }
 
   getDataStore = (type) => {
     const stores = this.getDataStoreTypes();
     for (let store in stores) {
       if (stores[store].component === type) {
-        return stores[store].store;
+        return stores[store];
       }
     }
     return null;
@@ -83,9 +85,11 @@ class App extends React.Component {
   getData = (type, id) => {
     id = parseInt(id);
     let dataStore = this.getDataStore(type);
-    for (const delta in this.state.data[dataStore]) {
-      if (this.state.data[dataStore][delta].id === id) {
-        return this.state.data[dataStore][delta];
+    if (dataStore) {
+      for (const delta in this.state.data[dataStore.store]) {
+        if (this.state.data[dataStore.store][delta].id === id) {
+          return this.state.data[dataStore.store][delta];
+        }
       }
     }
   }
@@ -95,47 +99,54 @@ class App extends React.Component {
   }
 
   getAllDataByType = (type) => {
-    let dataStore = this.getDataStore(type);
+    let dataStore = this.getDataStore(type).store;
     return this.state.data[dataStore];
   }
 
   updateData = (id, type, name, value) => {
-    id = parseInt(id);
-    let dataStore = this.getDataStore(type);
-    for (let delta in this.state.data[dataStore]) {
-      if (this.state.data[dataStore][delta].id === id) {
-        let stateCopy = JSON.parse(JSON.stringify(this.state));
-        stateCopy.data[dataStore][delta][name] = value;
-        this.setState(stateCopy);
-        localStorage.setItem("gm-tools-data", JSON.stringify(stateCopy.data));
-        return;
+    this.setState((state, props) => {
+      id = parseInt(id);
+      let dataStore = this.getDataStore(type).store;
+      for (let delta in state.data[dataStore]) {
+        if (state.data[dataStore][delta].id === id) {
+          let stateCopy = JSON.parse(JSON.stringify(state));
+          stateCopy.data[dataStore][delta][name] = value;
+          localStorage.setItem("gm-tools-data", JSON.stringify(stateCopy.data));
+          return stateCopy;
+        }
       }
-    }
+    });
   }
 
   deleteData = (type, id) => {
-    let dataStore = this.getDataStore(type);
-    let stateCopy = JSON.parse(JSON.stringify(this.state));
-    stateCopy.data[dataStore] = _.reject(stateCopy.data[dataStore], function(o) { return o.id === id; });
-    this.setState(stateCopy);
-    localStorage.setItem("gm-tools-data", JSON.stringify(stateCopy.data));
+    this.setState((state, props) => {
+      let dataStore = this.getDataStore(type).store;
+      let stateCopy = JSON.parse(JSON.stringify(state));
+      stateCopy.data[dataStore] = _.reject(stateCopy.data[dataStore], function(o) { return o.id === id; });
+      localStorage.setItem("gm-tools-data", JSON.stringify(stateCopy.data));
+      return stateCopy;
+    });
   }
 
-  addData = (type, parentId, parentType, data) => {
-    let dataStore = this.getDataStore(type);
-    let stateCopy = JSON.parse(JSON.stringify(this.state));
-    stateCopy.data.nextId++;
-    const dataInit = {
-      id: stateCopy.data.nextId,
-      parentId: parentId ? parentId : null,
-      parentType: parentType ? parentType : null,
-      name: 'New ' + type
-    };
-    const dataMerged = {...dataInit, ...data};
-    stateCopy.data[dataStore].push(dataMerged);
-    this.setState(stateCopy);
-    localStorage.setItem("gm-tools-data", JSON.stringify(stateCopy.data));
-    return stateCopy.data.nextId;
+  addData = (type, parentId, parentType, data, callback) => {
+    this.setState((state, props) => {
+      let dataStore = this.getDataStore(type).store;
+      let stateCopy = JSON.parse(JSON.stringify(state));
+      stateCopy.data.nextId++;
+      const dataInit = {
+        id: stateCopy.data.nextId,
+        parentId: parentId ? parentId : null,
+        parentType: parentType ? parentType : null,
+        name: 'New ' + type
+      };
+      const dataMerged = {...dataInit, ...data};
+      stateCopy.data[dataStore].push(dataMerged);
+      localStorage.setItem("gm-tools-data", JSON.stringify(stateCopy.data));
+      if (callback) {
+        callback(stateCopy.data.nextId);
+      }
+      return stateCopy;
+    });
   }
 
   open = (style, type, id, field) => {
@@ -160,6 +171,10 @@ class App extends React.Component {
     localStorage.setItem("gm-tools-config", JSON.stringify(stateCopy.config));
   }
 
+  addEvent = (parentId, parentType) => {
+    this.addData('Timeline', parentId, parentType, {datetime: this.state.config.datetime});
+  }
+
   render() {
     return (
       <main>
@@ -177,9 +192,11 @@ class App extends React.Component {
                 addData={this.addData}
                 deleteData={this.deleteData}
                 getDataStoreTypes={this.getDataStoreTypes}
+                getDataStore={this.getDataStore}
                 open={this.open}
                 getConfig={this.getConfig}
                 updateConfig={this.updateConfig}
+                addEvent={this.addEvent}
               />
             </Route>
           </Switch>

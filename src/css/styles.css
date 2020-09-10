@@ -109,6 +109,7 @@ html, body, #root, .frame {
   position: fixed;
   z-index: 100;
   margin: 35px 5px 5px 5px;
+  width: calc(100% - 14px);
 }
 
 .card-body {
@@ -376,17 +377,58 @@ ul.timeline li {
 }
 
 ul.timeline li .fa-li {
-  background-color: white;
-  border: 1px solid black;
+  background-color:white;
+  border: 1px solid #aaaaaa;
   border-radius: 15px;
   padding: 3px;
+  color: #666666;
 }
 
 .timeline__line {
-  border-left: 1px solid black;
+  border-left: 1px solid #aaaaaa;
   width: 1px;
   position: fixed;
   top: 113px;
   left: 33px;
   height: calc(100% - 147px);
+}
+
+.timeline__event {
+  margin-left: 7px;
+}
+
+.timeline__event-title {
+  margin-top: 5px;
+  font-weight: bold;
+  display: block;
+}
+
+.timeline__event-summary {
+  font-size: 0.9rem;
+  margin-top: -3px;
+  display: block;
+}
+
+.date {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.date__time {
+  margin-left: 3px;
+}
+
+.date__date {
+  float: right;
+  display: block;
+}
+
+li.timeline__daybreak {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  padding-right: 37px;
+  color: #747474;
+  background: #99999921;
+  text-align: right;
+  margin: 0 -10px 0 -47px;
 }

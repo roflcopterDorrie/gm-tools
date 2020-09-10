@@ -3,7 +3,6 @@ import Card from "components/Card";
 import MonsterList from "components/MonsterList";
 import ContentEditable from "components/ContentEditable";
 import ImageUploader from 'react-images-upload';
-import { image } from "d3";
 
 class Encounter extends Card {
 
@@ -121,6 +120,22 @@ class Encounter extends Card {
             onBlur={this.updateData}
             name="environmental"
             content={this.props.data.environmental || ''}
+            placeholder="none"
+          />
+          <h3>Treasure</h3>
+          <ContentEditable
+            tag="p"
+            onBlur={this.updateData}
+            name="treasure"
+            content={this.props.data.treasure || ''}
+            placeholder="none"
+          />
+          <h3>Outcome</h3>
+          <ContentEditable
+            tag="p"
+            onBlur={this.updateDataLogEvent}
+            name="outcome"
+            content={this.props.data.outcome || ''}
             placeholder="none"
           />
         </div>

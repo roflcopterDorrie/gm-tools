@@ -17,7 +17,7 @@ class Search extends Card {
 
   render() {
     let filtered = [];
-    let dataStoreTypes = this.props.getDataStoreTypes();
+    const dataStoreTypes = this.props.getDataStoreTypes();
     for (let key in dataStoreTypes) {
       if (!['Interaction', 'PlayerStat', 'Timeline'].includes(dataStoreTypes[key].component)) {
         if (this.props.allData[dataStoreTypes[key].store]) {

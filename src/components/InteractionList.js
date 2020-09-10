@@ -4,9 +4,22 @@ import ContentEditable from "components/ContentEditable";
 class InteractionList extends React.PureComponent {
 
   updateData = (id, name, value) => {
-    console.log(id + name + value);
     this.props.updateData(id, "Interaction", name, value);
+    this.logEvent(id);
   };
+
+  logEvent = (id) => {
+    let logEvent = true;
+    for (const index in this.props.allData['events']) {
+      if (this.props.allData['events'][index].parentId === id) {
+        logEvent = false;
+        break;
+      }
+    }
+    if (logEvent) {
+      this.props.addEvent(id, 'Interaction');
+    }
+  }
 
   addInteraction = () => {
     this.props.addData("Interaction", this.props.parentId, this.props.parentType);

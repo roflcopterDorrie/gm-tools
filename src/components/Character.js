@@ -80,6 +80,7 @@ class Character extends Card {
             deleteData={this.props.deleteData}
             addData={this.props.addData}
             allData={this.props.allData}
+            addEvent={this.props.addEvent}
           />
         </div>
         <div className="card-footer">

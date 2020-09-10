@@ -72,12 +72,6 @@ class Timeline extends Card {
     this.props.updateConfig('datetime', stateCopy.datetime);
   }
 
-  addEvent = (type) => {
-    if (type == 'camp') {
-      this.props.addData('Timeline', null, null, {type: 'camp', name: 'Camp', datetime: this.state.datetime});
-    }
-  }
-
   formatTime = (datetime) => {
     if (datetime) {
       const hour = datetime.hour === 0 ? 12 : datetime.hour > 12 ? datetime.hour - 12 : datetime.hour;
@@ -90,6 +84,10 @@ class Timeline extends Card {
 
   formatDate = (datetime) => {
     return datetime.day + ' ' + this.monthNames[datetime.month] + '(' + datetime.month + ') ' + datetime.year;
+  }
+
+  formatShortDate = (datetime) => {
+    return datetime.day + ' ' + this.monthNames[datetime.month];
   }
 
   timeBetween = (start, end) => {
@@ -149,9 +147,7 @@ class Timeline extends Card {
       if (minutes) {
         niceText.push(minutes + ' minute' + (minutes > 1 ? 's' : ''));
       }
-
-
-      return niceText.join(' ') + ' ago';
+      return niceText.join(' ');
     } else {
       return 'Unknown';
     }
@@ -173,15 +169,83 @@ class Timeline extends Card {
     this.setState(stateCopy);
   }
 
+  newestToOldest = (first, second) => {
+    const diff = this.datetimeToEpoc(second.datetime) - this.datetimeToEpoc(first.datetime);
+    if (diff === 0) {
+      return second.id - first.id;
+    }
+    return diff;
+  }
+
+  deleteEvent = (id) => {
+    this.props.deleteData('Timeline', id);
+  }
+
   render() {
     let timeline = [];
-    timeline = this.props.allData['events'].map((event) => {
+
+    let events = this.props.allData['events'];
+    // Order events by date, newest to oldest.
+    events.sort(this.newestToOldest);
+
+    timeline = events.map((event, index) => {
+      let nextEvent = events[index-1];
+      let icon, title, summary;
+      switch(event.parentType) {
+        case 'Long rest':
+        case 'Short rest':
+          icon = 'fa-campground';
+          title = event.parentType;
+          break;
+        case 'Travel':
+          icon = 'fa-route';
+          title = event.parentType;
+          break;
+        default:
+          const eventParent = this.props.getData(event.parentType, event.parentId);
+          const dataStore = this.props.getDataStore(event.parentType);
+          icon = dataStore.icon;
+          title = eventParent.name;
+          switch (event.parentType) {
+            case 'Encounter':
+              summary = eventParent.outcome;
+              break;
+            case 'Interaction':
+                const interactionParent = this.props.getData(eventParent.parentType, eventParent.parentId);
+                title = interactionParent.name;
+                summary = eventParent.name;
+                break;
+          }
+          break;
+      }
+
+      let timeBetween = this.timeBetween( nextEvent ? nextEvent.datetime : this.state.datetime, event.datetime);
+      if (nextEvent && timeBetween === 'Now') {
+        timeBetween = '';
+      } else {
+        timeBetween = '(' + timeBetween + ')';
+      }
+
+      let dayBreak = '';
+      if (nextEvent && nextEvent.datetime.day !== event.datetime.day) {
+        dayBreak = <li class="timeline__daybreak">{this.formatShortDate(event.datetime)}</li>
+      }
+
       return (
-        <li>
-          <span  className="fa-li"><i className="fas fa-campground"></i></span>
-          <span className="card-minor-minor">{this.timeBetween(this.state.datetime, event.datetime)}</span>
-          {event.name}
-        </li>
+        <>
+          {dayBreak}
+          <li>
+            <span className="fa-li"><i className={"fas " + icon}></i></span>
+            <div className="timeline__event">
+              <span className="card-minor-minor">{this.formatTime(event.datetime)} {timeBetween}</span>
+              <span className="timeline__event-title">{title}</span>
+              <span className="timeline__event-summary">{summary}</span>
+            </div>
+            <button style={{position: 'absolute', right: 0, top: 0}} className="link" onClick={(e) => {this.deleteEvent(event.id)}}>
+              <i className="fas fa-times"></i>
+            </button>
+          </li>
+        </>
       );
     });
 
@@ -192,7 +256,8 @@ class Timeline extends Card {
         </div>
         <div className="card-top">
           <div className="date">
-            {this.formatDate(this.state.datetime)} {this.formatTime(this.state.datetime)}
+            <span className="date__time"><i className="fas fa-clock"></i> {this.formatTime(this.state.datetime)}</span>
+            <span className="date__date"><i className="fas fa-calendar-alt"></i> {this.formatDate(this.state.datetime)}</span>
           </div>
           <div>
             <button className="icon" onClick={()=>this.adjustTime(15)}>15m</button>
@@ -222,7 +287,7 @@ class Timeline extends Card {
           </ul>
         </div>
         <div className="card-footer">
-          {this.toolbar(['event-camp'])}
+          {this.toolbar(['event-rest-long', 'event-rest-short', 'event-travel'])}
         </div>
       </section>
     );

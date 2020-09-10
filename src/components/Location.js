@@ -3,6 +3,7 @@ import Card from "components/Card";
 import ContentEditable from "components/ContentEditable";
 import LocationList from 'components/LocationList.js';
 import CharacterList from 'components/CharacterList.js';
+import InteractionList from "components/InteractionList";
 
 class Location extends Card {
 
@@ -94,9 +95,18 @@ class Location extends Card {
             parentId={this.props.data.id}
             parentType="Location"
           />
+          <InteractionList
+            parentId={this.props.data.id}
+            parentType={this.componentName}
+            updateData={this.props.updateData}
+            deleteData={this.props.deleteData}
+            addData={this.props.addData}
+            allData={this.props.allData}
+            addEvent={this.props.addEvent}
+          />
         </div>
         <div className="card-footer">
-          {this.toolbar()}
+          {this.toolbar(['add-location', 'add-character', 'add-encounter', 'event-location-arrive', 'delete'])}
         </div>
       </section>
     );

@@ -68,6 +68,7 @@ class Grid extends React.Component {
             addData={this.props.addData}
             deleteData={this.props.deleteData}
             open={this.props.open}
+            addEvent={this.props.addEvent}
           />
           <span className="card-close" onClick={(e) => this.closeCard(el.grid.i)}><i className="fas fa-times"></i></span>
         </div>
@@ -84,11 +85,13 @@ class Grid extends React.Component {
             showCard={this.showCard}
             getData={this.props.getData}
             getDataStoreTypes={this.props.getDataStoreTypes}
+            getDataStore={this.props.getDataStore}
             updateData={this.props.updateData}
             deleteData={this.props.deleteData}
             addData={this.props.addData}
             getConfig={this.props.getConfig}
             updateConfig={this.props.updateConfig}
+            addEvent={this.props.addEvent}
           />
           <span className="card-close" onClick={(e) => this.closeCard(el.grid.i)}><i className="fas fa-times"></i></span>
         </div>
@@ -140,7 +143,10 @@ class Grid extends React.Component {
   }
 
   newCard = (type, parentId, parentType) => {
-    this.showCard(type, this.props.addData(type, parentId, parentType));
+    let showCard = this.showCard;
+    this.props.addData(type, parentId, parentType, {}, (id) => {
+      showCard(type, id);
+    });
   }
 
   deleteCard = (type, id) => {
