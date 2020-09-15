@@ -106,6 +106,13 @@ class Encounter extends Card {
             selectedMonsters={this.props.data.monsters}
             monsterList={this.props.staticData['monsters']}
           />
+          Difficulty:
+          <select defaultValue={this.props.data.difficulty} onChange={(e) => this.updateData(null, 'difficulty', e.target.value)}>
+            <option>Easy</option>
+            <option>Medium</option>
+            <option>Hard</option>
+            <option>Deadly</option>
+          </select>
           <h3>Tactics</h3>
           <ContentEditable
             tag="p"

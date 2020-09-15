@@ -2,6 +2,13 @@ import React from "react";
 
 class Toolbar extends React.PureComponent {
 
+  exportData = () => {
+    var text = 'Some data I want to export';
+    var data = new Blob([text], {type: 'text/plain'});
+    var url = window.URL.createObjectURL(data);
+    document.getElementById('export_data').href = url;
+  }
+
   render() {
 
     return <section className="toolbar">
@@ -13,6 +20,7 @@ class Toolbar extends React.PureComponent {
       <button className="icon" onClick={() => this.props.newCard('Encounter', null)}><i className="fas fa-fw fa-skull-crossbones"></i></button>
       <button className="icon" onClick={() => this.props.showCard('PlayerStats', null)}><i className="fas fa-fw fa-users"></i></button>
       <button className="icon" onClick={() => this.props.showCard('Timeline', null)}><i className="fas fa-fw fa-clock"></i></button>
+      <a id="export_data" href="" download onClick={this.exportData}>Export</a>
     </section>;
   }
 }

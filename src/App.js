@@ -10,7 +10,7 @@ import {
 } from "react-router-dom";
 import _ from "lodash";
 import monsters from 'data/monsters.json';
-import '@fortawesome/fontawesome-free/js/all.min.js';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 
@@ -180,9 +180,10 @@ class App extends React.Component {
       <main>
         <Router>
           <Switch>
-            <Route path="/encounter-map/:id" children={<EncounterMapRoute getData={this.getData} updateData={this.updateData}/>}/>
-            <Route path="/encounter-tracker/:id" children={<EncounterTrackerRoute getData={this.getData} updateData={this.updateData}/>}/>
-            <Route path="/">
+          path={}
+            <Route path={process.env.PUBLIC_URL + "/encounter-map/:id"} children={<EncounterMapRoute getData={this.getData} updateData={this.updateData}/>}/>
+            <Route path={process.env.PUBLIC_URL + "/encounter-tracker/:id"} children={<EncounterTrackerRoute getData={this.getData} updateData={this.updateData} getStaticData={this.getStaticData}/>}/>
+            <Route path={process.env.PUBLIC_URL + "/"}>
               <Grid
                 getData={this.getData}
                 getAllDataByType={this.getAllDataByType}
@@ -230,10 +231,10 @@ function EncounterTrackerRoute(props) {
     <EncounterTracker
       getData={props.getData}
       updateData={props.updateData}
+      getStaticData={props.getStaticData}
       id={id}
     />
   );
 }
-
 
 export default App;

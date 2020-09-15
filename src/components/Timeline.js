@@ -208,6 +208,7 @@ class Timeline extends Card {
           title = eventParent.name;
           switch (event.parentType) {
             case 'Encounter':
+              title += ' - ' + eventParent.difficulty;
               summary = eventParent.outcome;
               break;
             case 'Interaction':

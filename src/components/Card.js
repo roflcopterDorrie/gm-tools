@@ -45,14 +45,12 @@ class Card extends React.PureComponent {
           <button className="icon" onClick={() => this.props.deleteCard(this.componentName, this.props.data.id)}><i className="fas fa-fw fa-trash-alt"></i></button>
         );
       } else if (tools[type] === 'encounter-map') {
-        if (this.props.data.map) {
-          toolbar.push(
-            <button className="icon" onClick={() => window.open('/encounter-map/' + this.props.data.id)}><i className="fas fa-fw fa-map"></i></button>
-          );
-        }
+        toolbar.push(
+          <button className="icon" onClick={() => window.open(process.env.PUBLIC_URL + '/encounter-map/' + this.props.data.id)}><i className="fas fa-fw fa-map"></i></button>
+        );
       } else if (tools[type] === 'encounter-tracker') {
         toolbar.push(
-          <button className="icon" onClick={() => window.open('/encounter-tracker/' + this.props.data.id)}><i className="fas fa-fw fa-skull-crossbones"></i></button>
+          <button className="icon" onClick={() => window.open(process.env.PUBLIC_URL + '/encounter-tracker/' + this.props.data.id)}><i className="fas fa-fw fa-skull-crossbones"></i></button>
         );
       } else if (tools[type] === 'add-player-stat') {
         toolbar.push(
