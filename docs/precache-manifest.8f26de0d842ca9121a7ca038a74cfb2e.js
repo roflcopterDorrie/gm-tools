@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0fd94e3f9474b7dd94435e57d50bcb7a",
+    "revision": "9fe94524f03fcfcff27923466151f16e",
     "url": "/gm-tools/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gm-tools/static/css/2.9bcb945e.chunk.css"
   },
   {
-    "revision": "c6c0a7e6dab5b583419e",
+    "revision": "4bc708f438b196c934dc",
     "url": "/gm-tools/static/css/main.0a8b96cf.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gm-tools/static/js/2.4a51a828.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c6c0a7e6dab5b583419e",
-    "url": "/gm-tools/static/js/main.53ced77d.chunk.js"
+    "revision": "4bc708f438b196c934dc",
+    "url": "/gm-tools/static/js/main.65880ad2.chunk.js"
   },
   {
     "revision": "75a71eba3f490166093f",
