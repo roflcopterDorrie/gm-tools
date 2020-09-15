@@ -455,16 +455,15 @@ li.timeline__daybreak {
 
 .monster-tracker {
   display: flex;
+  flex-wrap: wrap;
   align-items: stretch;
-  width: 285px;
-  margin-right: 10px;
+  width: 250px;
   text-align: center;
   color: white;
   font-weight: bold;
   box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.75);
   border-radius: 5px;
   border: 1px solid black;
-  margin-bottom: 10px;
 }
 
 .monster-tracker input {
@@ -506,11 +505,11 @@ input.monster-tracker__hpmax {
   text-align: right;
   color: lightgrey;
   font-size: 1.25rem;
-  width: 57px;
+  width: 41px;
 }
 
 .monster-tracker__adjust-value {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   width: 50px;
   text-align: center;
 }
@@ -525,4 +524,34 @@ input.monster-tracker__hpmax {
 
 button.monster-tracker__adjust-accept {
   padding: 0 10px;
+}
+
+.monster-tracker__header {
+  display: flex;
+  background: grey;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.monster-tracker__header span {
+  padding: 3px 0;
+}
+
+.monster-tracker__header span:nth-of-type(1) {
+  background: black;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.monster-tracker__conditions {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+button.monster-tracker__condition {
+  border: 1px solid grey;
+  font-size: 0.65rem;
+  padding: 0;
+  flex-basis: 12.5%;
 }

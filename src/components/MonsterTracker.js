@@ -1,11 +1,15 @@
 import React from "react";
-import ContentEditable from "components/ContentEditable";
 
 class MonsterTracker extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {maxHp: 50, hp: 50}
+  }
+
+  setMaxHp = () => {
+    document.getElementById("track-" + this.props.id + "-hp").value = document.getElementById("track-" + this.props.id + "-maxhp").value;
+    this.update();
   }
 
   update = () => {
@@ -58,7 +62,10 @@ class MonsterTracker extends React.Component {
 
     return (
       <div className="monster-tracker">
-        <div className="monster-tracker__id">{this.props.counter}</div>
+        <div className="monster-tracker__header">
+          <span>{this.props.counter}</span>
+          <span>{this.props.data.name}</span>
+        </div>
         <input className={"monster-tracker__hp monster-tracker--" + hpStatus} type="number" id={"track-" + this.props.id + "-hp"} value={this.state.hp} onChange={this.update}/>
         <input
           className="monster-tracker__adjust-value"
@@ -69,7 +76,24 @@ class MonsterTracker extends React.Component {
           onChange={(e) => {this.adjustColour(e)}}
         />
         <button className="monster-tracker__adjust-accept link" onClick={(e) => {this.adjust("track-" + this.props.id + "-adjust")}}><i className="fas fa-check"></i></button>
-        <input className="monster-tracker__hpmax" type="number" id={"track-" + this.props.id + "-maxhp"} value={this.state.maxHp} onChange={this.update}/>
+        <input className="monster-tracker__hpmax" type="tel" id={"track-" + this.props.id + "-maxhp"} value={this.state.maxHp} onChange={this.setMaxHp}/>
+        <div className="monster-tracker__conditions">
+          <button className="monster-tracker__condition">BLI</button>
+          <button className="monster-tracker__condition">CHA</button>
+          <button className="monster-tracker__condition">DIS</button>
+          <button className="monster-tracker__condition">FAT</button>
+          <button className="monster-tracker__condition">FRI</button>
+          <button className="monster-tracker__condition">GRA</button>
+          <button className="monster-tracker__condition">INC</button>
+          <button className="monster-tracker__condition">INV</button>
+          <button className="monster-tracker__condition">PAR</button>
+          <button className="monster-tracker__condition">PET</button>
+          <button className="monster-tracker__condition">POI</button>
+          <button className="monster-tracker__condition">PRO</button>
+          <button className="monster-tracker__condition">RES</button>
+          <button className="monster-tracker__condition">STU</button>
+          <button className="monster-tracker__condition">UNC</button>
+        </div>
       </div>
     )
   }
