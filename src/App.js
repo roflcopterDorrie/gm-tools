@@ -52,6 +52,30 @@ class App extends React.Component {
     this.getDataStore = this.getDataStore.bind(this);
   }
 
+  reloadFromStorage = () => {
+    this.setState({
+      data: JSON.parse(localStorage.getItem('gm-tools-data')) || {
+        locations: [],
+        characters: [],
+        quests: [],
+        encounters: [],
+        interactions: [],
+        playerStats: [],
+        events: [],
+        nextId: 1
+      },
+      config: JSON.parse(localStorage.getItem('gm-tools-config')) || {
+        datetime: {
+          minute: 0,
+          hour: 0,
+          day: 1,
+          month: 1,
+          year: 1370
+        }
+      }
+    });
+  }
+
   getDataStore = (type) => {
     const stores = this.getDataStoreTypes();
     for (let store in stores) {
@@ -198,6 +222,7 @@ class App extends React.Component {
                 getConfig={this.getConfig}
                 updateConfig={this.updateConfig}
                 addEvent={this.addEvent}
+                reloadFromStorage={this.reloadFromStorage}
               />
             </Route>
           </Switch>

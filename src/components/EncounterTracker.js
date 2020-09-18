@@ -63,6 +63,7 @@ class EncounterTracker extends React.Component {
       <div>
         {this.state.data.monsters.map((monster, index) => {
           const monsterData = this.getMonsterData(monster.id);
+          console.log(monsterData);
           return (
             <div className="encounter-tracker__monster">
               <h2>{monsterData.name} x {monster.count} &nbsp;

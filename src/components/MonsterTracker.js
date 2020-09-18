@@ -1,10 +1,28 @@
 import React from "react";
 
+const conditions = [
+  'Blinded',
+  'Charmed',
+  'Diseased',
+  'Fatigued',
+  'Frightened',
+  'Grappled',
+  'Incapacitated',
+  'Invisible',
+  'Paralysed',
+  'Petrified',
+  'Poisoned',
+  'Prone',
+  'Restrained',
+  'Stunned',
+  'Unconcious'
+];
+
 class MonsterTracker extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {maxHp: 50, hp: 50}
+    this.state = {maxHp: 50, hp: 50, conditions:[], showConditions: false};
   }
 
   setMaxHp = () => {
@@ -19,8 +37,7 @@ class MonsterTracker extends React.Component {
     });
   }
 
-  scroll = (e) => {
-  }
+  scroll = (e) => {}
 
   adjust = (e) => {
     let adjustValue = document.getElementById(e).value;
@@ -43,6 +60,25 @@ class MonsterTracker extends React.Component {
       e.target.classList.remove("monster-tracker__adjust-value--negative");
       e.target.classList.remove("monster-tracker__adjust-value--positive");
     }
+  }
+
+  toggleCondition = (condition) => {
+    let stateCopy = JSON.parse(JSON.stringify(this.state));
+    let index = stateCopy.conditions.findIndex((element) => {
+      return element == condition;
+    });
+    if (index > -1) {
+      stateCopy.conditions.splice(index,1);
+    } else {
+      stateCopy.conditions.push(condition);
+    }
+    this.setState(stateCopy);
+  }
+
+  showHideConditions = () => {
+    let stateCopy = JSON.parse(JSON.stringify(this.state));
+    stateCopy.showConditions = !stateCopy.showConditions;
+    this.setState(stateCopy);
   }
 
   render() {
@@ -73,26 +109,17 @@ class MonsterTracker extends React.Component {
           type="number"
           onWheel={(e) => {this.scroll(e)}}
           defaultValue="0"
+          onBlur={(e) => {this.adjust("track-" + this.props.id + "-adjust")}}
           onChange={(e) => {this.adjustColour(e)}}
         />
-        <button className="monster-tracker__adjust-accept link" onClick={(e) => {this.adjust("track-" + this.props.id + "-adjust")}}><i className="fas fa-check"></i></button>
-        <input className="monster-tracker__hpmax" type="tel" id={"track-" + this.props.id + "-maxhp"} value={this.state.maxHp} onChange={this.setMaxHp}/>
-        <div className="monster-tracker__conditions">
-          <button className="monster-tracker__condition">BLI</button>
-          <button className="monster-tracker__condition">CHA</button>
-          <button className="monster-tracker__condition">DIS</button>
-          <button className="monster-tracker__condition">FAT</button>
-          <button className="monster-tracker__condition">FRI</button>
-          <button className="monster-tracker__condition">GRA</button>
-          <button className="monster-tracker__condition">INC</button>
-          <button className="monster-tracker__condition">INV</button>
-          <button className="monster-tracker__condition">PAR</button>
-          <button className="monster-tracker__condition">PET</button>
-          <button className="monster-tracker__condition">POI</button>
-          <button className="monster-tracker__condition">PRO</button>
-          <button className="monster-tracker__condition">RES</button>
-          <button className="monster-tracker__condition">STU</button>
-          <button className="monster-tracker__condition">UNC</button>
+        <div className="monster-tracker__conditions-toggle">
+          <input className="monster-tracker__hpmax" type="tel" id={"track-" + this.props.id + "-maxhp"} value={this.state.maxHp} onChange={this.setMaxHp}/>
+          <button className="link" style={{display: 'block', width: '100%', textAlign: 'center'}} onClick={this.showHideConditions}><i className="fas fa-diagnoses"></i></button>
+        </div>
+        <div className="monster-tracker__conditions" style={{display: (this.state.showConditions) ? 'flex' : 'none'}}>
+          {conditions.map((condition) => {
+            return <button className={"monster-tracker__condition " + (this.state.conditions.includes(condition) ? 'active' : '')} onClick={(e) => this.toggleCondition(condition)}>{condition.substr(0,4)}</button>
+          })}
         </div>
       </div>
     )

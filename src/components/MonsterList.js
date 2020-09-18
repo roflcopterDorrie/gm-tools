@@ -1,4 +1,5 @@
 import React from "react";
+import Select from 'react-select';
 
 class MonsterList extends React.PureComponent {
 
@@ -9,12 +10,17 @@ class MonsterList extends React.PureComponent {
   }
 
   getMonsterList = (selectedId, delta, count) => {
+    let selected = {};
+    const options = this.props.monsterList.map((monster) => {
+      const option = {value: parseInt(monster.id), label: monster.name};
+      if (monster.id == selectedId) {
+        selected = option;
+      }
+      return option;
+    });
+
     return <div>
-      <select onChange={(e) => {this.updateData(delta, e.target.value)}} value={selectedId}>
-        {this.props.monsterList.map((monster) => {
-          return <option value={monster.id}>{monster.name}</option>
-        })}
-      </select> x&nbsp;
+      <Select onChange={(selectedOption) => {this.updateData(delta, selectedOption.value)}} defaultValue={selected} options={options}/> x&nbsp;
       <input type="number" className="monster-count" value={count} onChange={(e) => {this.updateData(delta, null, e.target.value)}}/>
       &nbsp;
       <button className="link" onClick={(e) => {this.deleteMonster(delta)}}>

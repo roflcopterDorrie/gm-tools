@@ -4,6 +4,7 @@ import ContentEditable from "components/ContentEditable";
 import LocationList from 'components/LocationList.js';
 import CharacterList from 'components/CharacterList.js';
 import InteractionList from "components/InteractionList";
+import EncounterList from "components/EncounterList";
 
 class Location extends Card {
 
@@ -94,6 +95,11 @@ class Location extends Card {
             showCard={this.props.showCard}
             parentId={this.props.data.id}
             parentType="Location"
+          />
+          <EncounterList
+            encounters={this.props.allData['encounters']}
+            showCard={this.props.showCard}
+            parentId={this.props.data.id}
           />
           <InteractionList
             parentId={this.props.data.id}

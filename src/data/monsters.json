@@ -1,17 +1,3477 @@
 [
   {
-    "id": 1,
-    "name": "Drow",
-    "dndbeyond": "https://www.dndbeyond.com/monsters/drow"
+      "id": "1",
+      "name": "Aarakocra",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/aarakocra"
   },
   {
-    "id": 2,
-    "name": "Giant Spider",
-    "dndbeyond": "https://www.dndbeyond.com/monsters/giant-spider"
+      "id": "2",
+      "name": "Abjurer",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/abjurer"
   },
   {
-    "id": 3,
-    "name": "White Dragon Wyrmling ",
-    "dndbeyond": "https://www.dndbeyond.com/monsters/white-dragon-wyrmling"
+      "id": "3",
+      "name": "Aboleth",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/aboleth"
+  },
+  {
+      "id": "4",
+      "name": "Abominable Yeti",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/abominable-yeti"
+  },
+  {
+      "id": "5",
+      "name": "Abyssal Wretch",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/abyssal-wretch"
+  },
+  {
+      "id": "6",
+      "name": "Acolyte",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/acolyte"
+  },
+  {
+      "id": "7",
+      "name": "Adult Black Dragon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/adult-black-dragon"
+  },
+  {
+      "id": "8",
+      "name": "Adult Blue Dracolich",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/adult-blue-dracolich"
+  },
+  {
+      "id": "9",
+      "name": "Adult Blue Dragon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/adult-blue-dragon"
+  },
+  {
+      "id": "10",
+      "name": "Adult Brass Dragon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/adult-brass-dragon"
+  },
+  {
+      "id": "11",
+      "name": "Adult Bronze Dragon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/adult-bronze-dragon"
+  },
+  {
+      "id": "12",
+      "name": "Adult Copper Dragon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/adult-copper-dragon"
+  },
+  {
+      "id": "13",
+      "name": "Adult Faerie Dragon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/adult-faerie-dragon"
+  },
+  {
+      "id": "14",
+      "name": "Adult Gold Dragon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/adult-gold-dragon"
+  },
+  {
+      "id": "15",
+      "name": "Adult Green Dragon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/adult-green-dragon"
+  },
+  {
+      "id": "16",
+      "name": "Adult Kruthik",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/adult-kruthik"
+  },
+  {
+      "id": "17",
+      "name": "Adult Oblex",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/adult-oblex"
+  },
+  {
+      "id": "18",
+      "name": "Adult Red Dragon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/adult-red-dragon"
+  },
+  {
+      "id": "19",
+      "name": "Adult Silver Dragon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/adult-silver-dragon"
+  },
+  {
+      "id": "20",
+      "name": "Adult White Dragon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/adult-white-dragon"
+  },
+  {
+      "id": "21",
+      "name": "Air Elemental",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/air-elemental"
+  },
+  {
+      "id": "22",
+      "name": "Air Elemental Myrmidon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/air-elemental-myrmidon"
+  },
+  {
+      "id": "23",
+      "name": "Alhoon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/alhoon"
+  },
+  {
+      "id": "24",
+      "name": "Alkilith",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/alkilith"
+  },
+  {
+      "id": "25",
+      "name": "Allip",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/allip"
+  },
+  {
+      "id": "26",
+      "name": "Allosaurus",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/allosaurus"
+  },
+  {
+      "id": "27",
+      "name": "Amnizu",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/amnizu"
+  },
+  {
+      "id": "28",
+      "name": "Ancient Black Dragon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/ancient-black-dragon"
+  },
+  {
+      "id": "29",
+      "name": "Ancient Blue Dragon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/ancient-blue-dragon"
+  },
+  {
+      "id": "30",
+      "name": "Ancient Brass Dragon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/ancient-brass-dragon"
+  },
+  {
+      "id": "31",
+      "name": "Ancient Bronze Dragon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/ancient-bronze-dragon"
+  },
+  {
+      "id": "32",
+      "name": "Ancient Copper Dragon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/ancient-copper-dragon"
+  },
+  {
+      "id": "33",
+      "name": "Ancient Gold Dragon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/ancient-gold-dragon"
+  },
+  {
+      "id": "34",
+      "name": "Ancient Green Dragon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/ancient-green-dragon"
+  },
+  {
+      "id": "35",
+      "name": "Ancient Red Dragon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/ancient-red-dragon"
+  },
+  {
+      "id": "36",
+      "name": "Ancient Silver Dragon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/ancient-silver-dragon"
+  },
+  {
+      "id": "37",
+      "name": "Ancient White Dragon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/ancient-white-dragon"
+  },
+  {
+      "id": "38",
+      "name": "Androsphinx",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/androsphinx"
+  },
+  {
+      "id": "39",
+      "name": "Angry Sorrowsworn",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/angry-sorrowsworn"
+  },
+  {
+      "id": "40",
+      "name": "Animated Armor",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/animated-armor"
+  },
+  {
+      "id": "41",
+      "name": "Ankheg",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/ankheg"
+  },
+  {
+      "id": "42",
+      "name": "Ankylosaurus",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/ankylosaurus"
+  },
+  {
+      "id": "43",
+      "name": "Annis Hag",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/annis-hag"
+  },
+  {
+      "id": "44",
+      "name": "Ape",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/ape"
+  },
+  {
+      "id": "45",
+      "name": "Apprentice Wizard",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/apprentice-wizard"
+  },
+  {
+      "id": "46",
+      "name": "Arcanaloth",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/arcanaloth"
+  },
+  {
+      "id": "47",
+      "name": "Archdruid",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/archdruid"
+  },
+  {
+      "id": "48",
+      "name": "Archer",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/archer"
+  },
+  {
+      "id": "49",
+      "name": "Archmage",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/archmage"
+  },
+  {
+      "id": "50",
+      "name": "Armanite",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/armanite"
+  },
+  {
+      "id": "51",
+      "name": "Assassin",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/assassin"
+  },
+  {
+      "id": "52",
+      "name": "Astral Dreadnought",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/astral-dreadnought"
+  },
+  {
+      "id": "53",
+      "name": "Aurochs",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/aurochs"
+  },
+  {
+      "id": "54",
+      "name": "Autumn Eladrin",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/autumn-eladrin"
+  },
+  {
+      "id": "55",
+      "name": "Awakened Shrub",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/awakened-shrub"
+  },
+  {
+      "id": "56",
+      "name": "Awakened Tree",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/awakened-tree"
+  },
+  {
+      "id": "57",
+      "name": "Axe Beak",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/axe-beak"
+  },
+  {
+      "id": "58",
+      "name": "Azer",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/azer"
+  },
+  {
+      "id": "59",
+      "name": "Babau",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/babau"
+  },
+  {
+      "id": "60",
+      "name": "Baboon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/baboon"
+  },
+  {
+      "id": "61",
+      "name": "Badger",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/badger"
+  },
+  {
+      "id": "62",
+      "name": "Balhannoth",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/balhannoth"
+  },
+  {
+      "id": "63",
+      "name": "Balor",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/balor"
+  },
+  {
+      "id": "64",
+      "name": "Banderhobb",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/banderhobb"
+  },
+  {
+      "id": "65",
+      "name": "Bandit",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/bandit"
+  },
+  {
+      "id": "66",
+      "name": "Bandit Captain",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/bandit-captain"
+  },
+  {
+      "id": "67",
+      "name": "Banshee",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/banshee"
+  },
+  {
+      "id": "68",
+      "name": "Barbed Devil",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/barbed-devil"
+  },
+  {
+      "id": "69",
+      "name": "Bard",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/bard"
+  },
+  {
+      "id": "70",
+      "name": "Barghest",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/barghest"
+  },
+  {
+      "id": "71",
+      "name": "Barlgura",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/barlgura"
+  },
+  {
+      "id": "72",
+      "name": "Basilisk",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/basilisk"
+  },
+  {
+      "id": "73",
+      "name": "Bat",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/bat"
+  },
+  {
+      "id": "74",
+      "name": "Bearded Devil",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/bearded-devil"
+  },
+  {
+      "id": "75",
+      "name": "Behir",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/behir"
+  },
+  {
+      "id": "76",
+      "name": "Beholder",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/beholder"
+  },
+  {
+      "id": "77",
+      "name": "Beholder in lair",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/beholder-in-lair"
+  },
+  {
+      "id": "78",
+      "name": "Beholder Zombie",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/beholder-zombie"
+  },
+  {
+      "id": "79",
+      "name": "Berbalang",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/berbalang"
+  },
+  {
+      "id": "80",
+      "name": "Berserker",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/berserker"
+  },
+  {
+      "id": "81",
+      "name": "Bheur Hag",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/bheur-hag"
+  },
+  {
+      "id": "82",
+      "name": "Black Abishai",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/black-abishai"
+  },
+  {
+      "id": "83",
+      "name": "Black Bear",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/black-bear"
+  },
+  {
+      "id": "84",
+      "name": "Black Dragon Wyrmling",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/black-dragon-wyrmling"
+  },
+  {
+      "id": "85",
+      "name": "Black Pudding",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/black-pudding"
+  },
+  {
+      "id": "86",
+      "name": "Blackguard",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/blackguard"
+  },
+  {
+      "id": "87",
+      "name": "Blink Dog",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/blink-dog"
+  },
+  {
+      "id": "88",
+      "name": "Blood Hawk",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/blood-hawk"
+  },
+  {
+      "id": "89",
+      "name": "Blue Abishai",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/blue-abishai"
+  },
+  {
+      "id": "90",
+      "name": "Blue Dragon Wyrmling",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/blue-dragon-wyrmling"
+  },
+  {
+      "id": "91",
+      "name": "Blue Slaad",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/blue-slaad"
+  },
+  {
+      "id": "92",
+      "name": "Boar",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/boar"
+  },
+  {
+      "id": "93",
+      "name": "Bodak",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/bodak"
+  },
+  {
+      "id": "94",
+      "name": "Boggle",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/boggle"
+  },
+  {
+      "id": "95",
+      "name": "Bone Devil",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/bone-devil"
+  },
+  {
+      "id": "96",
+      "name": "Bone Naga",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/bone-naga"
+  },
+  {
+      "id": "97",
+      "name": "Boneclaw",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/boneclaw"
+  },
+  {
+      "id": "98",
+      "name": "Brass Dragon Wyrmling",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/brass-dragon-wyrmling"
+  },
+  {
+      "id": "99",
+      "name": "Brontosaurus",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/brontosaurus"
+  },
+  {
+      "id": "100",
+      "name": "Bronze Dragon Wyrmling",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/bronze-dragon-wyrmling"
+  },
+  {
+      "id": "101",
+      "name": "Bronze Scout",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/bronze-scout"
+  },
+  {
+      "id": "102",
+      "name": "Brown Bear",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/brown-bear"
+  },
+  {
+      "id": "103",
+      "name": "Bugbear",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/bugbear"
+  },
+  {
+      "id": "104",
+      "name": "Bugbear Chief",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/bugbear-chief"
+  },
+  {
+      "id": "105",
+      "name": "Bulette",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/bulette"
+  },
+  {
+      "id": "106",
+      "name": "Bulezau",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/bulezau"
+  },
+  {
+      "id": "107",
+      "name": "Bullywug",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/bullywug"
+  },
+  {
+      "id": "108",
+      "name": "Cadaver Collector",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/cadaver-collector"
+  },
+  {
+      "id": "109",
+      "name": "Cambion",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/cambion"
+  },
+  {
+      "id": "110",
+      "name": "Camel",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/camel"
+  },
+  {
+      "id": "111",
+      "name": "Canoloth",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/canoloth"
+  },
+  {
+      "id": "112",
+      "name": "Carrion Crawler",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/carrion-crawler"
+  },
+  {
+      "id": "113",
+      "name": "Cat",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/cat"
+  },
+  {
+      "id": "114",
+      "name": "Catoblepas",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/catoblepas"
+  },
+  {
+      "id": "115",
+      "name": "Cave Bear",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/cave-bear"
+  },
+  {
+      "id": "116",
+      "name": "Cave Fisher",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/cave-fisher"
+  },
+  {
+      "id": "117",
+      "name": "Centaur",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/centaur"
+  },
+  {
+      "id": "118",
+      "name": "Chain Devil",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/chain-devil"
+  },
+  {
+      "id": "119",
+      "name": "Champion",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/champion"
+  },
+  {
+      "id": "120",
+      "name": "Chasme",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/chasme"
+  },
+  {
+      "id": "121",
+      "name": "Chimera",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/chimera"
+  },
+  {
+      "id": "122",
+      "name": "Chitine",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/chitine"
+  },
+  {
+      "id": "123",
+      "name": "Choker",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/choker"
+  },
+  {
+      "id": "124",
+      "name": "Choldrith",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/choldrith"
+  },
+  {
+      "id": "125",
+      "name": "Chuul",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/chuul"
+  },
+  {
+      "id": "126",
+      "name": "Clay Golem",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/clay-golem"
+  },
+  {
+      "id": "127",
+      "name": "Cloaker",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/cloaker"
+  },
+  {
+      "id": "128",
+      "name": "Cloud Giant",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/cloud-giant"
+  },
+  {
+      "id": "129",
+      "name": "Cloud Giant Smiling One",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/cloud-giant-smiling-one"
+  },
+  {
+      "id": "130",
+      "name": "Cockatrice",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/cockatrice"
+  },
+  {
+      "id": "131",
+      "name": "Commoner",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/commoner"
+  },
+  {
+      "id": "132",
+      "name": "Conjurer",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/conjurer"
+  },
+  {
+      "id": "133",
+      "name": "Constrictor Snake",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/constrictor-snake"
+  },
+  {
+      "id": "134",
+      "name": "Copper Dragon Wyrmling",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/copper-dragon-wyrmling"
+  },
+  {
+      "id": "135",
+      "name": "Corpse Flower",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/corpse-flower"
+  },
+  {
+      "id": "136",
+      "name": "Couatl",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/couatl"
+  },
+  {
+      "id": "137",
+      "name": "Cow",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/cow"
+  },
+  {
+      "id": "138",
+      "name": "Crab",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/crab"
+  },
+  {
+      "id": "139",
+      "name": "Cranium Rat",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/cranium-rat"
+  },
+  {
+      "id": "140",
+      "name": "Crawling Claw",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/crawling-claw"
+  },
+  {
+      "id": "141",
+      "name": "Crocodile",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/crocodile"
+  },
+  {
+      "id": "142",
+      "name": "Cult Fanatic",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/cult-fanatic"
+  },
+  {
+      "id": "143",
+      "name": "Cultist",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/cultist"
+  },
+  {
+      "id": "144",
+      "name": "Cyclops",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/cyclops"
+  },
+  {
+      "id": "145",
+      "name": "Dao",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/dao"
+  },
+  {
+      "id": "146",
+      "name": "Darkling",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/darkling"
+  },
+  {
+      "id": "147",
+      "name": "Darkling Elder",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/darkling-elder"
+  },
+  {
+      "id": "148",
+      "name": "Darkmantle",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/darkmantle"
+  },
+  {
+      "id": "149",
+      "name": "Death Dog",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/death-dog"
+  },
+  {
+      "id": "150",
+      "name": "Death Kiss",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/death-kiss"
+  },
+  {
+      "id": "151",
+      "name": "Death Knight",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/death-knight"
+  },
+  {
+      "id": "152",
+      "name": "Death Slaad",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/death-slaad"
+  },
+  {
+      "id": "153",
+      "name": "Death Tyrant",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/death-tyrant"
+  },
+  {
+      "id": "154",
+      "name": "Death Tyrant in lair",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/death-tyrant-in-lair"
+  },
+  {
+      "id": "155",
+      "name": "Deathlock",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/deathlock"
+  },
+  {
+      "id": "156",
+      "name": "Deathlock Mastermind",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/deathlock-mastermind"
+  },
+  {
+      "id": "157",
+      "name": "Deathlock Wight",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/deathlock-wight"
+  },
+  {
+      "id": "158",
+      "name": "Deep Rothe",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/deep-rothe"
+  },
+  {
+      "id": "159",
+      "name": "Deep Scion",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/deep-scion"
+  },
+  {
+      "id": "160",
+      "name": "Deer",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/deer"
+  },
+  {
+      "id": "161",
+      "name": "Deinonychus",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/deinonychus"
+  },
+  {
+      "id": "162",
+      "name": "Demilich",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/demilich"
+  },
+  {
+      "id": "163",
+      "name": "Demilich in lair",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/demilich-in-lair"
+  },
+  {
+      "id": "164",
+      "name": "Derro",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/derro"
+  },
+  {
+      "id": "165",
+      "name": "Derro Savant",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/derro-savant"
+  },
+  {
+      "id": "166",
+      "name": "Deva",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/deva"
+  },
+  {
+      "id": "167",
+      "name": "Devourer",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/devourer"
+  },
+  {
+      "id": "168",
+      "name": "Dhergoloth",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/dhergoloth"
+  },
+  {
+      "id": "169",
+      "name": "Dimetrodon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/dimetrodon"
+  },
+  {
+      "id": "170",
+      "name": "Dire Troll",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/dire-troll"
+  },
+  {
+      "id": "171",
+      "name": "Dire Wolf",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/dire-wolf"
+  },
+  {
+      "id": "172",
+      "name": "Displacer Beast",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/displacer-beast"
+  },
+  {
+      "id": "173",
+      "name": "Diviner",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/diviner"
+  },
+  {
+      "id": "174",
+      "name": "Djinni",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/djinni"
+  },
+  {
+      "id": "175",
+      "name": "Dolphin",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/dolphin"
+  },
+  {
+      "id": "176",
+      "name": "Doppelganger",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/doppelganger"
+  },
+  {
+      "id": "177",
+      "name": "Draegloth",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/draegloth"
+  },
+  {
+      "id": "178",
+      "name": "Draft Horse",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/draft-horse"
+  },
+  {
+      "id": "179",
+      "name": "Dragon Turtle",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/dragon-turtle"
+  },
+  {
+      "id": "180",
+      "name": "Dretch",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/dretch"
+  },
+  {
+      "id": "181",
+      "name": "Drider",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/drider"
+  },
+  {
+      "id": "182",
+      "name": "Drow",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/drow"
+  },
+  {
+      "id": "183",
+      "name": "Drow Arachnomancer",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/drow-arachnomancer"
+  },
+  {
+      "id": "184",
+      "name": "Drow Elite Warrior",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/drow-elite-warrior"
+  },
+  {
+      "id": "185",
+      "name": "Drow Favored Consort",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/drow-favored-consort"
+  },
+  {
+      "id": "186",
+      "name": "Drow House Captain",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/drow-house-captain"
+  },
+  {
+      "id": "187",
+      "name": "Drow Inquisitor",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/drow-inquisitor"
+  },
+  {
+      "id": "188",
+      "name": "Drow Mage",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/drow-mage"
+  },
+  {
+      "id": "189",
+      "name": "Drow Matron Mother",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/drow-matron-mother"
+  },
+  {
+      "id": "190",
+      "name": "Drow Priestess of Lolth",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/drow-priestess-of-lolth"
+  },
+  {
+      "id": "191",
+      "name": "Drow Shadowblade",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/drow-shadowblade"
+  },
+  {
+      "id": "192",
+      "name": "Druid",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/druid"
+  },
+  {
+      "id": "193",
+      "name": "Dryad",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/dryad"
+  },
+  {
+      "id": "194",
+      "name": "Duergar",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/duergar"
+  },
+  {
+      "id": "195",
+      "name": "Duergar Despot",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/duergar-despot"
+  },
+  {
+      "id": "196",
+      "name": "Duergar Hammerer",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/duergar-hammerer"
+  },
+  {
+      "id": "197",
+      "name": "Duergar Kavalrachni",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/duergar-kavalrachni"
+  },
+  {
+      "id": "198",
+      "name": "Duergar Mind Master",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/duergar-mind-master"
+  },
+  {
+      "id": "199",
+      "name": "Duergar Screamer",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/duergar-screamer"
+  },
+  {
+      "id": "200",
+      "name": "Duergar Soulblade",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/duergar-soulblade"
+  },
+  {
+      "id": "201",
+      "name": "Duergar Stone Guard",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/duergar-stone-guard"
+  },
+  {
+      "id": "202",
+      "name": "Duergar Warlord",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/duergar-warlord"
+  },
+  {
+      "id": "203",
+      "name": "Duergar Xarrorn",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/duergar-xarrorn"
+  },
+  {
+      "id": "204",
+      "name": "Duodrone",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/duodrone"
+  },
+  {
+      "id": "205",
+      "name": "Dust Mephit",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/dust-mephit"
+  },
+  {
+      "id": "206",
+      "name": "Dybbuk",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/dybbuk"
+  },
+  {
+      "id": "207",
+      "name": "Eagle",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/eagle"
+  },
+  {
+      "id": "208",
+      "name": "Earth Elemental",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/earth-elemental"
+  },
+  {
+      "id": "209",
+      "name": "Earth Elemental Myrmidon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/earth-elemental-myrmidon"
+  },
+  {
+      "id": "210",
+      "name": "Efreeti",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/efreeti"
+  },
+  {
+      "id": "211",
+      "name": "Eidolon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/eidolon"
+  },
+  {
+      "id": "212",
+      "name": "Elder Brain",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/elder-brain"
+  },
+  {
+      "id": "213",
+      "name": "Elder Oblex",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/elder-oblex"
+  },
+  {
+      "id": "214",
+      "name": "Elder Tempest",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/elder-tempest"
+  },
+  {
+      "id": "215",
+      "name": "Elephant",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/elephant"
+  },
+  {
+      "id": "216",
+      "name": "Elk",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/elk"
+  },
+  {
+      "id": "217",
+      "name": "Empyrean",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/empyrean"
+  },
+  {
+      "id": "218",
+      "name": "Enchanter",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/enchanter"
+  },
+  {
+      "id": "219",
+      "name": "Erinyes",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/erinyes"
+  },
+  {
+      "id": "220",
+      "name": "Ettercap",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/ettercap"
+  },
+  {
+      "id": "221",
+      "name": "Ettin",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/ettin"
+  },
+  {
+      "id": "222",
+      "name": "Evoker",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/evoker"
+  },
+  {
+      "id": "223",
+      "name": "Female Steeder",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/female-steeder"
+  },
+  {
+      "id": "224",
+      "name": "Fire Elemental",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/fire-elemental"
+  },
+  {
+      "id": "225",
+      "name": "Fire Elemental Myrmidon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/fire-elemental-myrmidon"
+  },
+  {
+      "id": "226",
+      "name": "Fire Giant",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/fire-giant"
+  },
+  {
+      "id": "227",
+      "name": "Fire Giant Dreadnought",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/fire-giant-dreadnought"
+  },
+  {
+      "id": "228",
+      "name": "Fire Snake",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/fire-snake"
+  },
+  {
+      "id": "229",
+      "name": "Firenewt Warlock of Imix",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/firenewt-warlock-of-imix"
+  },
+  {
+      "id": "230",
+      "name": "Firenewt Warrior",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/firenewt-warrior"
+  },
+  {
+      "id": "231",
+      "name": "Flail Snail",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/flail-snail"
+  },
+  {
+      "id": "232",
+      "name": "Flameskull",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/flameskull"
+  },
+  {
+      "id": "233",
+      "name": "Flesh Golem",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/flesh-golem"
+  },
+  {
+      "id": "234",
+      "name": "Flind",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/flind"
+  },
+  {
+      "id": "235",
+      "name": "Flumph",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/flumph"
+  },
+  {
+      "id": "236",
+      "name": "Flying Snake",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/flying-snake"
+  },
+  {
+      "id": "237",
+      "name": "Flying Sword",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/flying-sword"
+  },
+  {
+      "id": "238",
+      "name": "Fomorian",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/fomorian"
+  },
+  {
+      "id": "239",
+      "name": "Frog",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/frog"
+  },
+  {
+      "id": "240",
+      "name": "Froghemoth",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/froghemoth"
+  },
+  {
+      "id": "241",
+      "name": "Frost Giant",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/frost-giant"
+  },
+  {
+      "id": "242",
+      "name": "Frost Giant Everlasting One",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/frost-giant-everlasting-one"
+  },
+  {
+      "id": "243",
+      "name": "Frost Salamander",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/frost-salamander"
+  },
+  {
+      "id": "244",
+      "name": "Galeb Duhr",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/galeb-duhr"
+  },
+  {
+      "id": "245",
+      "name": "Gargoyle",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/gargoyle"
+  },
+  {
+      "id": "246",
+      "name": "Gas Spore",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/gas-spore"
+  },
+  {
+      "id": "247",
+      "name": "Gauth",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/gauth"
+  },
+  {
+      "id": "248",
+      "name": "Gazer",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/gazer"
+  },
+  {
+      "id": "249",
+      "name": "Gelatinous Cube",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/gelatinous-cube"
+  },
+  {
+      "id": "250",
+      "name": "Ghast",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/ghast"
+  },
+  {
+      "id": "251",
+      "name": "Ghost",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/ghost"
+  },
+  {
+      "id": "252",
+      "name": "Ghoul",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/ghoul"
+  },
+  {
+      "id": "253",
+      "name": "Giant Ape",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/giant-ape"
+  },
+  {
+      "id": "254",
+      "name": "Giant Badger",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/giant-badger"
+  },
+  {
+      "id": "255",
+      "name": "Giant Bat",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/giant-bat"
+  },
+  {
+      "id": "256",
+      "name": "Giant Boar",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/giant-boar"
+  },
+  {
+      "id": "257",
+      "name": "Giant Centipede",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/giant-centipede"
+  },
+  {
+      "id": "258",
+      "name": "Giant Constrictor Snake",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/giant-constrictor-snake"
+  },
+  {
+      "id": "259",
+      "name": "Giant Crab",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/giant-crab"
+  },
+  {
+      "id": "260",
+      "name": "Giant Crocodile",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/giant-crocodile"
+  },
+  {
+      "id": "261",
+      "name": "Giant Eagle",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/giant-eagle"
+  },
+  {
+      "id": "262",
+      "name": "Giant Elk",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/giant-elk"
+  },
+  {
+      "id": "263",
+      "name": "Giant Fire Beetle",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/giant-fire-beetle"
+  },
+  {
+      "id": "264",
+      "name": "Giant Frog",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/giant-frog"
+  },
+  {
+      "id": "265",
+      "name": "Giant Goat",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/giant-goat"
+  },
+  {
+      "id": "266",
+      "name": "Giant Hyena",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/giant-hyena"
+  },
+  {
+      "id": "267",
+      "name": "Giant Lizard",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/giant-lizard"
+  },
+  {
+      "id": "268",
+      "name": "Giant Octopus",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/giant-octopus"
+  },
+  {
+      "id": "269",
+      "name": "Giant Owl",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/giant-owl"
+  },
+  {
+      "id": "270",
+      "name": "Giant Poisonous Snake",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/giant-poisonous-snake"
+  },
+  {
+      "id": "271",
+      "name": "Giant Rat",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/giant-rat"
+  },
+  {
+      "id": "272",
+      "name": "Giant Scorpion",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/giant-scorpion"
+  },
+  {
+      "id": "273",
+      "name": "Giant Sea Horse",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/giant-sea-horse"
+  },
+  {
+      "id": "274",
+      "name": "Giant Shark",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/giant-shark"
+  },
+  {
+      "id": "275",
+      "name": "Giant Spider",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/giant-spider"
+  },
+  {
+      "id": "276",
+      "name": "Giant Strider",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/giant-strider"
+  },
+  {
+      "id": "277",
+      "name": "Giant Toad",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/giant-toad"
+  },
+  {
+      "id": "278",
+      "name": "Giant Vulture",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/giant-vulture"
+  },
+  {
+      "id": "279",
+      "name": "Giant Wasp",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/giant-wasp"
+  },
+  {
+      "id": "280",
+      "name": "Giant Weasel",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/giant-weasel"
+  },
+  {
+      "id": "281",
+      "name": "Giant Wolf Spider",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/giant-wolf-spider"
+  },
+  {
+      "id": "282",
+      "name": "Gibbering Mouther",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/gibbering-mouther"
+  },
+  {
+      "id": "283",
+      "name": "Giff",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/giff"
+  },
+  {
+      "id": "284",
+      "name": "Girallon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/girallon"
+  },
+  {
+      "id": "285",
+      "name": "Githyanki Gish",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/githyanki-gish"
+  },
+  {
+      "id": "286",
+      "name": "Githyanki Kith'rak",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/githyanki-kith'rak"
+  },
+  {
+      "id": "287",
+      "name": "Githyanki Knight",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/githyanki-knight"
+  },
+  {
+      "id": "288",
+      "name": "Githyanki Supreme Commander",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/githyanki-supreme-commander"
+  },
+  {
+      "id": "289",
+      "name": "Githyanki Warrior",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/githyanki-warrior"
+  },
+  {
+      "id": "290",
+      "name": "Githzerai Anarch",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/githzerai-anarch"
+  },
+  {
+      "id": "291",
+      "name": "Githzerai Enlightened",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/githzerai-enlightened"
+  },
+  {
+      "id": "292",
+      "name": "Githzerai Monk",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/githzerai-monk"
+  },
+  {
+      "id": "293",
+      "name": "Githzerai Zerth",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/githzerai-zerth"
+  },
+  {
+      "id": "294",
+      "name": "Glabrezu",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/glabrezu"
+  },
+  {
+      "id": "295",
+      "name": "Gladiator",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/gladiator"
+  },
+  {
+      "id": "296",
+      "name": "Gloom Weaver",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/gloom-weaver"
+  },
+  {
+      "id": "297",
+      "name": "Gnoll",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/gnoll"
+  },
+  {
+      "id": "298",
+      "name": "Gnoll Fang of Yeenoghu",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/gnoll-fang-of-yeenoghu"
+  },
+  {
+      "id": "299",
+      "name": "Gnoll Flesh Gnawer",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/gnoll-flesh-gnawer"
+  },
+  {
+      "id": "300",
+      "name": "Gnoll Hunter",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/gnoll-hunter"
+  },
+  {
+      "id": "301",
+      "name": "Gnoll Pack Lord",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/gnoll-pack-lord"
+  },
+  {
+      "id": "302",
+      "name": "Gnoll Witherling",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/gnoll-witherling"
+  },
+  {
+      "id": "303",
+      "name": "Goat",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/goat"
+  },
+  {
+      "id": "304",
+      "name": "Goblin",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/goblin"
+  },
+  {
+      "id": "305",
+      "name": "Goblin Boss",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/goblin-boss"
+  },
+  {
+      "id": "306",
+      "name": "Gold Dragon Wyrmling",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/gold-dragon-wyrmling"
+  },
+  {
+      "id": "307",
+      "name": "Gorgon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/gorgon"
+  },
+  {
+      "id": "308",
+      "name": "Goristro",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/goristro"
+  },
+  {
+      "id": "309",
+      "name": "Gray Ooze",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/gray-ooze"
+  },
+  {
+      "id": "310",
+      "name": "Gray Render",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/gray-render"
+  },
+  {
+      "id": "311",
+      "name": "Gray Slaad",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/gray-slaad"
+  },
+  {
+      "id": "312",
+      "name": "Green Abishai",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/green-abishai"
+  },
+  {
+      "id": "313",
+      "name": "Green Dragon Wyrmling",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/green-dragon-wyrmling"
+  },
+  {
+      "id": "314",
+      "name": "Green Hag",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/green-hag"
+  },
+  {
+      "id": "315",
+      "name": "Green Slaad",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/green-slaad"
+  },
+  {
+      "id": "316",
+      "name": "Grell",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/grell"
+  },
+  {
+      "id": "317",
+      "name": "Grick",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/grick"
+  },
+  {
+      "id": "318",
+      "name": "Grick Alpha",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/grick-alpha"
+  },
+  {
+      "id": "319",
+      "name": "Griffon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/griffon"
+  },
+  {
+      "id": "320",
+      "name": "Grimlock",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/grimlock"
+  },
+  {
+      "id": "321",
+      "name": "Grung",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/grung"
+  },
+  {
+      "id": "322",
+      "name": "Grung Elite Warrior",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/grung-elite-warrior"
+  },
+  {
+      "id": "323",
+      "name": "Grung Wildling",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/grung-wildling"
+  },
+  {
+      "id": "324",
+      "name": "Guard",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/guard"
+  },
+  {
+      "id": "325",
+      "name": "Guard Drake",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/guard-drake"
+  },
+  {
+      "id": "326",
+      "name": "Guardian Naga",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/guardian-naga"
+  },
+  {
+      "id": "327",
+      "name": "Gynosphinx",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/gynosphinx"
+  },
+  {
+      "id": "328",
+      "name": "Hadrosaurus",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/hadrosaurus"
+  },
+  {
+      "id": "329",
+      "name": "Half-ogre",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/half-ogre"
+  },
+  {
+      "id": "330",
+      "name": "Half-Red Dragon Veteran",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/half-red-dragon-veteran"
+  },
+  {
+      "id": "331",
+      "name": "Harpy",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/harpy"
+  },
+  {
+      "id": "332",
+      "name": "Hawk",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/hawk"
+  },
+  {
+      "id": "333",
+      "name": "Hell Hound",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/hell-hound"
+  },
+  {
+      "id": "334",
+      "name": "Hellfire Engine",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/hellfire-engine"
+  },
+  {
+      "id": "335",
+      "name": "Helmed Horror",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/helmed-horror"
+  },
+  {
+      "id": "336",
+      "name": "Hezrou",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/hezrou"
+  },
+  {
+      "id": "337",
+      "name": "Hill Giant",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/hill-giant"
+  },
+  {
+      "id": "338",
+      "name": "Hippogriff",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/hippogriff"
+  },
+  {
+      "id": "339",
+      "name": "Hobgoblin",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/hobgoblin"
+  },
+  {
+      "id": "340",
+      "name": "Hobgoblin Captain",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/hobgoblin-captain"
+  },
+  {
+      "id": "341",
+      "name": "Hobgoblin Devastator",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/hobgoblin-devastator"
+  },
+  {
+      "id": "342",
+      "name": "Hobgoblin Iron Shadow",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/hobgoblin-iron-shadow"
+  },
+  {
+      "id": "343",
+      "name": "Hobgoblin Warlord",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/hobgoblin-warlord"
+  },
+  {
+      "id": "344",
+      "name": "Homunculus",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/homunculus"
+  },
+  {
+      "id": "345",
+      "name": "Hook Horror",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/hook-horror"
+  },
+  {
+      "id": "346",
+      "name": "Horned Devil",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/horned-devil"
+  },
+  {
+      "id": "347",
+      "name": "Howler",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/howler"
+  },
+  {
+      "id": "348",
+      "name": "Hungry Sorrowsworn",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/hungry-sorrowsworn"
+  },
+  {
+      "id": "349",
+      "name": "Hunter Shark",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/hunter-shark"
+  },
+  {
+      "id": "350",
+      "name": "Hydra",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/hydra"
+  },
+  {
+      "id": "351",
+      "name": "Hydroloth",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/hydroloth"
+  },
+  {
+      "id": "352",
+      "name": "Hyena",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/hyena"
+  },
+  {
+      "id": "353",
+      "name": "Ice Devil",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/ice-devil"
+  },
+  {
+      "id": "354",
+      "name": "Ice Mephit",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/ice-mephit"
+  },
+  {
+      "id": "355",
+      "name": "Illusionist",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/illusionist"
+  },
+  {
+      "id": "356",
+      "name": "Imp",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/imp"
+  },
+  {
+      "id": "357",
+      "name": "Incubus",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/incubus"
+  },
+  {
+      "id": "358",
+      "name": "Intellect Devourer",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/intellect-devourer"
+  },
+  {
+      "id": "359",
+      "name": "Invisible Stalker",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/invisible-stalker"
+  },
+  {
+      "id": "360",
+      "name": "Iron Cobra",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/iron-cobra"
+  },
+  {
+      "id": "361",
+      "name": "Iron Golem",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/iron-golem"
+  },
+  {
+      "id": "362",
+      "name": "Jackal",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/jackal"
+  },
+  {
+      "id": "363",
+      "name": "Jackalwere",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/jackalwere"
+  },
+  {
+      "id": "364",
+      "name": "Kenku",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/kenku"
+  },
+  {
+      "id": "365",
+      "name": "Ki-rin",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/ki-rin"
+  },
+  {
+      "id": "366",
+      "name": "Killer Whale",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/killer-whale"
+  },
+  {
+      "id": "367",
+      "name": "Knight",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/knight"
+  },
+  {
+      "id": "368",
+      "name": "Kobold",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/kobold"
+  },
+  {
+      "id": "369",
+      "name": "Kobold Dragonshield",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/kobold-dragonshield"
+  },
+  {
+      "id": "370",
+      "name": "Kobold Inventor",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/kobold-inventor"
+  },
+  {
+      "id": "371",
+      "name": "Kobold Scale Sorcerer",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/kobold-scale-sorcerer"
+  },
+  {
+      "id": "372",
+      "name": "Korred",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/korred"
+  },
+  {
+      "id": "373",
+      "name": "Kraken",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/kraken"
+  },
+  {
+      "id": "374",
+      "name": "Kraken Priest",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/kraken-priest"
+  },
+  {
+      "id": "375",
+      "name": "Kruthik Hive Lord",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/kruthik-hive-lord"
+  },
+  {
+      "id": "376",
+      "name": "Kuo-toa",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/kuo-toa"
+  },
+  {
+      "id": "377",
+      "name": "Kuo-toa Archpriest",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/kuo-toa-archpriest"
+  },
+  {
+      "id": "378",
+      "name": "Kuo-toa Whip",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/kuo-toa-whip"
+  },
+  {
+      "id": "379",
+      "name": "Lamia",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/lamia"
+  },
+  {
+      "id": "380",
+      "name": "Lemure",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/lemure"
+  },
+  {
+      "id": "381",
+      "name": "Leucrotta",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/leucrotta"
+  },
+  {
+      "id": "382",
+      "name": "Leviathan",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/leviathan"
+  },
+  {
+      "id": "383",
+      "name": "Lich",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/lich"
+  },
+  {
+      "id": "384",
+      "name": "Lich in lair",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/lich-in-lair"
+  },
+  {
+      "id": "385",
+      "name": "Lion",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/lion"
+  },
+  {
+      "id": "386",
+      "name": "Lizard",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/lizard"
+  },
+  {
+      "id": "387",
+      "name": "Lizard King/Queen",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/lizard-king/queen"
+  },
+  {
+      "id": "388",
+      "name": "Lizardfolk",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/lizardfolk"
+  },
+  {
+      "id": "389",
+      "name": "Lizardfolk Shaman",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/lizardfolk-shaman"
+  },
+  {
+      "id": "390",
+      "name": "Lonely Sorrowsworn",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/lonely-sorrowsworn"
+  },
+  {
+      "id": "391",
+      "name": "Lost Sorrowsworn",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/lost-sorrowsworn"
+  },
+  {
+      "id": "392",
+      "name": "Mage",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/mage"
+  },
+  {
+      "id": "393",
+      "name": "Magma Mephit",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/magma-mephit"
+  },
+  {
+      "id": "394",
+      "name": "Magmin",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/magmin"
+  },
+  {
+      "id": "395",
+      "name": "Male Steeder",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/male-steeder"
+  },
+  {
+      "id": "396",
+      "name": "Mammoth",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/mammoth"
+  },
+  {
+      "id": "397",
+      "name": "Manes",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/manes"
+  },
+  {
+      "id": "398",
+      "name": "Manticore",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/manticore"
+  },
+  {
+      "id": "399",
+      "name": "Marid",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/marid"
+  },
+  {
+      "id": "400",
+      "name": "Marilith",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/marilith"
+  },
+  {
+      "id": "401",
+      "name": "Martial Arts Adept",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/martial-arts-adept"
+  },
+  {
+      "id": "402",
+      "name": "Marut",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/marut"
+  },
+  {
+      "id": "403",
+      "name": "Master Thief",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/master-thief"
+  },
+  {
+      "id": "404",
+      "name": "Mastiff",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/mastiff"
+  },
+  {
+      "id": "405",
+      "name": "Maurezhi",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/maurezhi"
+  },
+  {
+      "id": "406",
+      "name": "Maw Demon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/maw-demon"
+  },
+  {
+      "id": "407",
+      "name": "Meazel",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/meazel"
+  },
+  {
+      "id": "408",
+      "name": "Medusa",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/medusa"
+  },
+  {
+      "id": "409",
+      "name": "Meenlock",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/meenlock"
+  },
+  {
+      "id": "410",
+      "name": "Merfolk",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/merfolk"
+  },
+  {
+      "id": "411",
+      "name": "Merregon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/merregon"
+  },
+  {
+      "id": "412",
+      "name": "Merrenoloth",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/merrenoloth"
+  },
+  {
+      "id": "413",
+      "name": "Merrow",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/merrow"
+  },
+  {
+      "id": "414",
+      "name": "Mezzoloth",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/mezzoloth"
+  },
+  {
+      "id": "415",
+      "name": "Mimic",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/mimic"
+  },
+  {
+      "id": "416",
+      "name": "Mind Flayer",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/mind-flayer"
+  },
+  {
+      "id": "417",
+      "name": "Mind Flayer Arcanist",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/mind-flayer-arcanist"
+  },
+  {
+      "id": "418",
+      "name": "Mind Flayer Lich",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/mind-flayer-lich"
+  },
+  {
+      "id": "419",
+      "name": "Mindwitness",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/mindwitness"
+  },
+  {
+      "id": "420",
+      "name": "Minotaur",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/minotaur"
+  },
+  {
+      "id": "421",
+      "name": "Minotaur Skeleton",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/minotaur-skeleton"
+  },
+  {
+      "id": "422",
+      "name": "Molydeus",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/molydeus"
+  },
+  {
+      "id": "423",
+      "name": "Monodrone",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/monodrone"
+  },
+  {
+      "id": "424",
+      "name": "Morkoth",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/morkoth"
+  },
+  {
+      "id": "425",
+      "name": "Morkoth in lair",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/morkoth-in-lair"
+  },
+  {
+      "id": "426",
+      "name": "Mouth of Grolantor",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/mouth-of-grolantor"
+  },
+  {
+      "id": "427",
+      "name": "Mud Mephit",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/mud-mephit"
+  },
+  {
+      "id": "428",
+      "name": "Mule",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/mule"
+  },
+  {
+      "id": "429",
+      "name": "Mummy",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/mummy"
+  },
+  {
+      "id": "430",
+      "name": "Mummy Lord",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/mummy-lord"
+  },
+  {
+      "id": "431",
+      "name": "Mummy Lord in lair",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/mummy-lord-in-lair"
+  },
+  {
+      "id": "432",
+      "name": "Myconid Adult",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/myconid-adult"
+  },
+  {
+      "id": "433",
+      "name": "Myconid Sovereign",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/myconid-sovereign"
+  },
+  {
+      "id": "434",
+      "name": "Myconid Sprout",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/myconid-sprout"
+  },
+  {
+      "id": "435",
+      "name": "Nabassu",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/nabassu"
+  },
+  {
+      "id": "436",
+      "name": "Nagpa",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/nagpa"
+  },
+  {
+      "id": "437",
+      "name": "Nalfeshnee",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/nalfeshnee"
+  },
+  {
+      "id": "438",
+      "name": "Narzugon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/narzugon"
+  },
+  {
+      "id": "439",
+      "name": "Necromancer",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/necromancer"
+  },
+  {
+      "id": "440",
+      "name": "Needle Blight",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/needle-blight"
+  },
+  {
+      "id": "441",
+      "name": "Neogi",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/neogi"
+  },
+  {
+      "id": "442",
+      "name": "Neogi Hatchling",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/neogi-hatchling"
+  },
+  {
+      "id": "443",
+      "name": "Neogi Master",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/neogi-master"
+  },
+  {
+      "id": "444",
+      "name": "Neothelid",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/neothelid"
+  },
+  {
+      "id": "445",
+      "name": "Night Hag",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/night-hag"
+  },
+  {
+      "id": "446",
+      "name": "Nightmare",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/nightmare"
+  },
+  {
+      "id": "447",
+      "name": "Nightwalker",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/nightwalker"
+  },
+  {
+      "id": "448",
+      "name": "Nilbog",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/nilbog"
+  },
+  {
+      "id": "449",
+      "name": "Noble",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/noble"
+  },
+  {
+      "id": "450",
+      "name": "Nothic",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/nothic"
+  },
+  {
+      "id": "451",
+      "name": "Nupperibo",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/nupperibo"
+  },
+  {
+      "id": "452",
+      "name": "Nycaloth",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/nycaloth"
+  },
+  {
+      "id": "453",
+      "name": "Oaken Bolter",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/oaken-bolter"
+  },
+  {
+      "id": "454",
+      "name": "Oblex Spawn",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/oblex-spawn"
+  },
+  {
+      "id": "455",
+      "name": "Ochre Jelly",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/ochre-jelly"
+  },
+  {
+      "id": "456",
+      "name": "Octopus",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/octopus"
+  },
+  {
+      "id": "457",
+      "name": "Ogre",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/ogre"
+  },
+  {
+      "id": "458",
+      "name": "Ogre Battering Ram",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/ogre-battering-ram"
+  },
+  {
+      "id": "459",
+      "name": "Ogre Bolt Launcher",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/ogre-bolt-launcher"
+  },
+  {
+      "id": "460",
+      "name": "Ogre Chain Brute",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/ogre-chain-brute"
+  },
+  {
+      "id": "461",
+      "name": "Ogre Howdah",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/ogre-howdah"
+  },
+  {
+      "id": "462",
+      "name": "Ogre Zombie",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/ogre-zombie"
+  },
+  {
+      "id": "463",
+      "name": "Oinoloth",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/oinoloth"
+  },
+  {
+      "id": "464",
+      "name": "Oni",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/oni"
+  },
+  {
+      "id": "465",
+      "name": "Orc",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/orc"
+  },
+  {
+      "id": "466",
+      "name": "Orc Blade of Ilneval",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/orc-blade-of-ilneval"
+  },
+  {
+      "id": "467",
+      "name": "Orc Claw of Luthic",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/orc-claw-of-luthic"
+  },
+  {
+      "id": "468",
+      "name": "Orc Eye of Gruumsh",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/orc-eye-of-gruumsh"
+  },
+  {
+      "id": "469",
+      "name": "Orc Hand of Yurtrus",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/orc-hand-of-yurtrus"
+  },
+  {
+      "id": "470",
+      "name": "Orc Nurtured One of Yurtrus",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/orc-nurtured-one-of-yurtrus"
+  },
+  {
+      "id": "471",
+      "name": "Orc Red Fang of Shargaas",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/orc-red-fang-of-shargaas"
+  },
+  {
+      "id": "472",
+      "name": "Orc War Chief",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/orc-war-chief"
+  },
+  {
+      "id": "473",
+      "name": "Orog",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/orog"
+  },
+  {
+      "id": "474",
+      "name": "Orthon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/orthon"
+  },
+  {
+      "id": "475",
+      "name": "Otyugh",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/otyugh"
+  },
+  {
+      "id": "476",
+      "name": "Owl",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/owl"
+  },
+  {
+      "id": "477",
+      "name": "Owlbear",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/owlbear"
+  },
+  {
+      "id": "478",
+      "name": "Ox",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/ox"
+  },
+  {
+      "id": "479",
+      "name": "Panther",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/panther"
+  },
+  {
+      "id": "480",
+      "name": "Pegasus",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/pegasus"
+  },
+  {
+      "id": "481",
+      "name": "Pentadrone",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/pentadrone"
+  },
+  {
+      "id": "482",
+      "name": "Peryton",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/peryton"
+  },
+  {
+      "id": "483",
+      "name": "Phase Spider",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/phase-spider"
+  },
+  {
+      "id": "484",
+      "name": "Phoenix",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/phoenix"
+  },
+  {
+      "id": "485",
+      "name": "Piercer",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/piercer"
+  },
+  {
+      "id": "486",
+      "name": "Pit Fiend",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/pit-fiend"
+  },
+  {
+      "id": "487",
+      "name": "Pixie",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/pixie"
+  },
+  {
+      "id": "488",
+      "name": "Planetar",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/planetar"
+  },
+  {
+      "id": "489",
+      "name": "Plesiosaurus",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/plesiosaurus"
+  },
+  {
+      "id": "490",
+      "name": "Poisonous Snake",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/poisonous-snake"
+  },
+  {
+      "id": "491",
+      "name": "Polar Bear",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/polar-bear"
+  },
+  {
+      "id": "492",
+      "name": "Pony",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/pony"
+  },
+  {
+      "id": "493",
+      "name": "Priest",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/priest"
+  },
+  {
+      "id": "494",
+      "name": "Pseudodragon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/pseudodragon"
+  },
+  {
+      "id": "495",
+      "name": "Pteranodon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/pteranodon"
+  },
+  {
+      "id": "496",
+      "name": "Purple Worm",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/purple-worm"
+  },
+  {
+      "id": "497",
+      "name": "Quadrone",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/quadrone"
+  },
+  {
+      "id": "498",
+      "name": "Quaggoth",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/quaggoth"
+  },
+  {
+      "id": "499",
+      "name": "Quaggoth Spore Servant",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/quaggoth-spore-servant"
+  },
+  {
+      "id": "500",
+      "name": "Quaggoth Thonot",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/quaggoth-thonot"
+  },
+  {
+      "id": "501",
+      "name": "Quasit",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/quasit"
+  },
+  {
+      "id": "502",
+      "name": "Quetzalcoatlus",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/quetzalcoatlus"
+  },
+  {
+      "id": "503",
+      "name": "Quickling",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/quickling"
+  },
+  {
+      "id": "504",
+      "name": "Quipper",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/quipper"
+  },
+  {
+      "id": "505",
+      "name": "Rakshasa",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/rakshasa"
+  },
+  {
+      "id": "506",
+      "name": "Rat",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/rat"
+  },
+  {
+      "id": "507",
+      "name": "Raven",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/raven"
+  },
+  {
+      "id": "508",
+      "name": "Red Abishai",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/red-abishai"
+  },
+  {
+      "id": "509",
+      "name": "Red Dragon Wyrmling",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/red-dragon-wyrmling"
+  },
+  {
+      "id": "510",
+      "name": "Red Slaad",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/red-slaad"
+  },
+  {
+      "id": "511",
+      "name": "Redcap",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/redcap"
+  },
+  {
+      "id": "512",
+      "name": "Reef Shark",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/reef-shark"
+  },
+  {
+      "id": "513",
+      "name": "Remorhaz",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/remorhaz"
+  },
+  {
+      "id": "514",
+      "name": "Retriever",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/retriever"
+  },
+  {
+      "id": "515",
+      "name": "Revenant",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/revenant"
+  },
+  {
+      "id": "516",
+      "name": "Rhinoceros",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/rhinoceros"
+  },
+  {
+      "id": "517",
+      "name": "Riding Horse",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/riding-horse"
+  },
+  {
+      "id": "518",
+      "name": "Roc",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/roc"
+  },
+  {
+      "id": "519",
+      "name": "Roper",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/roper"
+  },
+  {
+      "id": "520",
+      "name": "Rot Troll",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/rot-troll"
+  },
+  {
+      "id": "521",
+      "name": "Rothe",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/rothe"
+  },
+  {
+      "id": "522",
+      "name": "Rug of Smothering",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/rug-of-smothering"
+  },
+  {
+      "id": "523",
+      "name": "Rust Monster",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/rust-monster"
+  },
+  {
+      "id": "524",
+      "name": "Rutterkin",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/rutterkin"
+  },
+  {
+      "id": "525",
+      "name": "Saber-toothed Tiger",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/saber-toothed-tiger"
+  },
+  {
+      "id": "526",
+      "name": "Sahuagin",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/sahuagin"
+  },
+  {
+      "id": "527",
+      "name": "Sahuagin Baron",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/sahuagin-baron"
+  },
+  {
+      "id": "528",
+      "name": "Sahuagin Priestess",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/sahuagin-priestess"
+  },
+  {
+      "id": "529",
+      "name": "Salamander",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/salamander"
+  },
+  {
+      "id": "530",
+      "name": "Satyr",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/satyr"
+  },
+  {
+      "id": "531",
+      "name": "Scarecrow",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/scarecrow"
+  },
+  {
+      "id": "532",
+      "name": "Scorpion",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/scorpion"
+  },
+  {
+      "id": "533",
+      "name": "Scout",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/scout"
+  },
+  {
+      "id": "534",
+      "name": "Sea Hag",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/sea-hag"
+  },
+  {
+      "id": "535",
+      "name": "Sea Horse",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/sea-horse"
+  },
+  {
+      "id": "536",
+      "name": "Sea Spawn",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/sea-spawn"
+  },
+  {
+      "id": "537",
+      "name": "Shadow",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/shadow"
+  },
+  {
+      "id": "538",
+      "name": "Shadow Dancer",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/shadow-dancer"
+  },
+  {
+      "id": "539",
+      "name": "Shadow Demon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/shadow-demon"
+  },
+  {
+      "id": "540",
+      "name": "Shadow Mastiff",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/shadow-mastiff"
+  },
+  {
+      "id": "541",
+      "name": "Shambling Mound",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/shambling-mound"
+  },
+  {
+      "id": "542",
+      "name": "Shield Guardian",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/shield-guardian"
+  },
+  {
+      "id": "543",
+      "name": "Shoosuva",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/shoosuva"
+  },
+  {
+      "id": "544",
+      "name": "Shrieker",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/shrieker"
+  },
+  {
+      "id": "545",
+      "name": "Sibriex",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/sibriex"
+  },
+  {
+      "id": "546",
+      "name": "Silver Dragon Wyrmling",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/silver-dragon-wyrmling"
+  },
+  {
+      "id": "547",
+      "name": "Skeleton",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/skeleton"
+  },
+  {
+      "id": "548",
+      "name": "Skulk",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/skulk"
+  },
+  {
+      "id": "549",
+      "name": "Skull Lord",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/skull-lord"
+  },
+  {
+      "id": "550",
+      "name": "Slaad Tadpole",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/slaad-tadpole"
+  },
+  {
+      "id": "551",
+      "name": "Slithering Tracker",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/slithering-tracker"
+  },
+  {
+      "id": "552",
+      "name": "Smoke Mephit",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/smoke-mephit"
+  },
+  {
+      "id": "553",
+      "name": "Solar",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/solar"
+  },
+  {
+      "id": "554",
+      "name": "Soul Monger",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/soul-monger"
+  },
+  {
+      "id": "555",
+      "name": "Spawn of Kyuss",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/spawn-of-kyuss"
+  },
+  {
+      "id": "556",
+      "name": "Spectator",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/spectator"
+  },
+  {
+      "id": "557",
+      "name": "Specter",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/specter"
+  },
+  {
+      "id": "558",
+      "name": "Specter poltergeist",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/specter-poltergeist"
+  },
+  {
+      "id": "559",
+      "name": "Spider",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/spider"
+  },
+  {
+      "id": "560",
+      "name": "Spined Devil",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/spined-devil"
+  },
+  {
+      "id": "561",
+      "name": "Spirit Naga",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/spirit-naga"
+  },
+  {
+      "id": "562",
+      "name": "Spirit Troll",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/spirit-troll"
+  },
+  {
+      "id": "563",
+      "name": "Spring Eladrin",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/spring-eladrin"
+  },
+  {
+      "id": "564",
+      "name": "Sprite",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/sprite"
+  },
+  {
+      "id": "565",
+      "name": "Spy",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/spy"
+  },
+  {
+      "id": "566",
+      "name": "Star Spawn Grue",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/star-spawn-grue"
+  },
+  {
+      "id": "567",
+      "name": "Star Spawn Hulk",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/star-spawn-hulk"
+  },
+  {
+      "id": "568",
+      "name": "Star Spawn Larva Mage",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/star-spawn-larva-mage"
+  },
+  {
+      "id": "569",
+      "name": "Star Spawn Mangler",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/star-spawn-mangler"
+  },
+  {
+      "id": "570",
+      "name": "Star Spawn Seer",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/star-spawn-seer"
+  },
+  {
+      "id": "571",
+      "name": "Steam Mephit",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/steam-mephit"
+  },
+  {
+      "id": "572",
+      "name": "Steel Predator",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/steel-predator"
+  },
+  {
+      "id": "573",
+      "name": "Stegosaurus",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/stegosaurus"
+  },
+  {
+      "id": "574",
+      "name": "Stench Kow",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/stench-kow"
+  },
+  {
+      "id": "575",
+      "name": "Stirge",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/stirge"
+  },
+  {
+      "id": "576",
+      "name": "Stone Cursed",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/stone-cursed"
+  },
+  {
+      "id": "577",
+      "name": "Stone Defender",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/stone-defender"
+  },
+  {
+      "id": "578",
+      "name": "Stone Giant",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/stone-giant"
+  },
+  {
+      "id": "579",
+      "name": "Stone Giant Dreamwalker",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/stone-giant-dreamwalker"
+  },
+  {
+      "id": "580",
+      "name": "Stone Golem",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/stone-golem"
+  },
+  {
+      "id": "581",
+      "name": "Storm Giant",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/storm-giant"
+  },
+  {
+      "id": "582",
+      "name": "Storm Giant Quintessent",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/storm-giant-quintessent"
+  },
+  {
+      "id": "583",
+      "name": "Succubus",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/succubus"
+  },
+  {
+      "id": "584",
+      "name": "Summer Eladrin",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/summer-eladrin"
+  },
+  {
+      "id": "585",
+      "name": "Svirfneblin",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/svirfneblin"
+  },
+  {
+      "id": "586",
+      "name": "Swarm of Bats",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/swarm-of-bats"
+  },
+  {
+      "id": "587",
+      "name": "Swarm of Cranium Rats",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/swarm-of-cranium-rats"
+  },
+  {
+      "id": "588",
+      "name": "Swarm of Insects",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/swarm-of-insects"
+  },
+  {
+      "id": "589",
+      "name": "Swarm of Poisonous Snakes",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/swarm-of-poisonous-snakes"
+  },
+  {
+      "id": "590",
+      "name": "Swarm of Quippers",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/swarm-of-quippers"
+  },
+  {
+      "id": "591",
+      "name": "Swarm of Rats",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/swarm-of-rats"
+  },
+  {
+      "id": "592",
+      "name": "Swarm of Ravens",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/swarm-of-ravens"
+  },
+  {
+      "id": "593",
+      "name": "Swarm of Rot Grubs",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/swarm-of-rot-grubs"
+  },
+  {
+      "id": "594",
+      "name": "Swashbuckler",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/swashbuckler"
+  },
+  {
+      "id": "595",
+      "name": "Sword Wraith Commander",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/sword-wraith-commander"
+  },
+  {
+      "id": "596",
+      "name": "Sword Wraith Warrior",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/sword-wraith-warrior"
+  },
+  {
+      "id": "597",
+      "name": "Tanarukk",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/tanarukk"
+  },
+  {
+      "id": "598",
+      "name": "Tarrasque",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/tarrasque"
+  },
+  {
+      "id": "599",
+      "name": "Thorny",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/thorny"
+  },
+  {
+      "id": "600",
+      "name": "Thri-kreen",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/thri-kreen"
+  },
+  {
+      "id": "601",
+      "name": "Thug",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/thug"
+  },
+  {
+      "id": "602",
+      "name": "Tiger",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/tiger"
+  },
+  {
+      "id": "603",
+      "name": "Tlincalli",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/tlincalli"
+  },
+  {
+      "id": "604",
+      "name": "Tortle",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/tortle"
+  },
+  {
+      "id": "605",
+      "name": "Tortle Druid",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/tortle-druid"
+  },
+  {
+      "id": "606",
+      "name": "Transmuter",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/transmuter"
+  },
+  {
+      "id": "607",
+      "name": "Trapper",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/trapper"
+  },
+  {
+      "id": "608",
+      "name": "Treant",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/treant"
+  },
+  {
+      "id": "609",
+      "name": "Tribal Warrior",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/tribal-warrior"
+  },
+  {
+      "id": "610",
+      "name": "Triceratops",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/triceratops"
+  },
+  {
+      "id": "611",
+      "name": "Tridrone",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/tridrone"
+  },
+  {
+      "id": "612",
+      "name": "Troglodyte",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/troglodyte"
+  },
+  {
+      "id": "613",
+      "name": "Troll",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/troll"
+  },
+  {
+      "id": "614",
+      "name": "Twig Blight",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/twig-blight"
+  },
+  {
+      "id": "615",
+      "name": "Tyrannosaurus Rex",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/tyrannosaurus-rex"
+  },
+  {
+      "id": "616",
+      "name": "Ulitharid",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/ulitharid"
+  },
+  {
+      "id": "617",
+      "name": "Ultroloth",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/ultroloth"
+  },
+  {
+      "id": "618",
+      "name": "Umber Hulk",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/umber-hulk"
+  },
+  {
+      "id": "619",
+      "name": "Unicorn",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/unicorn"
+  },
+  {
+      "id": "620",
+      "name": "Vampire",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/vampire"
+  },
+  {
+      "id": "621",
+      "name": "Vampire spellcaster",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/vampire-spellcaster"
+  },
+  {
+      "id": "622",
+      "name": "Vampire warrior",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/vampire-warrior"
+  },
+  {
+      "id": "623",
+      "name": "Vampire Spawn",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/vampire-spawn"
+  },
+  {
+      "id": "624",
+      "name": "Vampiric Mist",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/vampiric-mist"
+  },
+  {
+      "id": "625",
+      "name": "Vargouille",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/vargouille"
+  },
+  {
+      "id": "626",
+      "name": "Vegepygmy",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/vegepygmy"
+  },
+  {
+      "id": "627",
+      "name": "Vegepygmy Chief",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/vegepygmy-chief"
+  },
+  {
+      "id": "628",
+      "name": "Velociraptor",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/velociraptor"
+  },
+  {
+      "id": "629",
+      "name": "Venom Troll",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/venom-troll"
+  },
+  {
+      "id": "630",
+      "name": "Veteran",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/veteran"
+  },
+  {
+      "id": "631",
+      "name": "Vine Blight",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/vine-blight"
+  },
+  {
+      "id": "632",
+      "name": "Violet Fungus",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/violet-fungus"
+  },
+  {
+      "id": "633",
+      "name": "Vrock",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/vrock"
+  },
+  {
+      "id": "634",
+      "name": "Vulture",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/vulture"
+  },
+  {
+      "id": "635",
+      "name": "War Priest",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/war-priest"
+  },
+  {
+      "id": "636",
+      "name": "Warhorse",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/warhorse"
+  },
+  {
+      "id": "637",
+      "name": "Warhorse Skeleton",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/warhorse-skeleton"
+  },
+  {
+      "id": "638",
+      "name": "Warlock of the Archfey",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/warlock-of-the-archfey"
+  },
+  {
+      "id": "639",
+      "name": "Warlock of the Fiend",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/warlock-of-the-fiend"
+  },
+  {
+      "id": "640",
+      "name": "Warlock of the Great Old One",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/warlock-of-the-great-old-one"
+  },
+  {
+      "id": "641",
+      "name": "Warlord",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/warlord"
+  },
+  {
+      "id": "642",
+      "name": "Wastrilith",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/wastrilith"
+  },
+  {
+      "id": "643",
+      "name": "Water Elemental",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/water-elemental"
+  },
+  {
+      "id": "644",
+      "name": "Water Elemental Myrmidon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/water-elemental-myrmidon"
+  },
+  {
+      "id": "645",
+      "name": "Water Weird",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/water-weird"
+  },
+  {
+      "id": "646",
+      "name": "Weasel",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/weasel"
+  },
+  {
+      "id": "647",
+      "name": "Werebear",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/werebear"
+  },
+  {
+      "id": "648",
+      "name": "Wereboar",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/wereboar"
+  },
+  {
+      "id": "649",
+      "name": "Wererat",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/wererat"
+  },
+  {
+      "id": "650",
+      "name": "Weretiger",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/weretiger"
+  },
+  {
+      "id": "651",
+      "name": "Werewolf",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/werewolf"
+  },
+  {
+      "id": "652",
+      "name": "White Abishai",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/white-abishai"
+  },
+  {
+      "id": "653",
+      "name": "White Dragon Wyrmling",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/white-dragon-wyrmling"
+  },
+  {
+      "id": "654",
+      "name": "Wight",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/wight"
+  },
+  {
+      "id": "655",
+      "name": "Will-o-wisp",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/will-o-wisp"
+  },
+  {
+      "id": "656",
+      "name": "Winged Kobold",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/winged-kobold"
+  },
+  {
+      "id": "657",
+      "name": "Winter Eladrin",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/winter-eladrin"
+  },
+  {
+      "id": "658",
+      "name": "Winter Wolf",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/winter-wolf"
+  },
+  {
+      "id": "659",
+      "name": "Wolf",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/wolf"
+  },
+  {
+      "id": "660",
+      "name": "Wood Woad",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/wood-woad"
+  },
+  {
+      "id": "661",
+      "name": "Worg",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/worg"
+  },
+  {
+      "id": "662",
+      "name": "Wraith",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/wraith"
+  },
+  {
+      "id": "663",
+      "name": "Wretched Sorrowsworn",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/wretched-sorrowsworn"
+  },
+  {
+      "id": "664",
+      "name": "Wyvern",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/wyvern"
+  },
+  {
+      "id": "665",
+      "name": "Xorn",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/xorn"
+  },
+  {
+      "id": "666",
+      "name": "Xvart",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/xvart"
+  },
+  {
+      "id": "667",
+      "name": "Xvart Warlock of Raxivort",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/xvart-warlock-of-raxivort"
+  },
+  {
+      "id": "668",
+      "name": "Yagnoloth",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/yagnoloth"
+  },
+  {
+      "id": "669",
+      "name": "Yeth Hound",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/yeth-hound"
+  },
+  {
+      "id": "670",
+      "name": "Yeti",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/yeti"
+  },
+  {
+      "id": "671",
+      "name": "Yochlol",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/yochlol"
+  },
+  {
+      "id": "672",
+      "name": "Young Black Dragon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/young-black-dragon"
+  },
+  {
+      "id": "673",
+      "name": "Young Blue Dragon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/young-blue-dragon"
+  },
+  {
+      "id": "674",
+      "name": "Young Brass Dragon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/young-brass-dragon"
+  },
+  {
+      "id": "675",
+      "name": "Young Bronze Dragon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/young-bronze-dragon"
+  },
+  {
+      "id": "676",
+      "name": "Young Copper Dragon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/young-copper-dragon"
+  },
+  {
+      "id": "677",
+      "name": "Young Faerie Dragon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/young-faerie-dragon"
+  },
+  {
+      "id": "678",
+      "name": "Young Gold Dragon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/young-gold-dragon"
+  },
+  {
+      "id": "679",
+      "name": "Young Green Dragon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/young-green-dragon"
+  },
+  {
+      "id": "680",
+      "name": "Young Kruthik",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/young-kruthik"
+  },
+  {
+      "id": "681",
+      "name": "Young Red Dragon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/young-red-dragon"
+  },
+  {
+      "id": "682",
+      "name": "Young Red Shadow Dragon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/young-red-shadow-dragon"
+  },
+  {
+      "id": "683",
+      "name": "Young Remorhaz",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/young-remorhaz"
+  },
+  {
+      "id": "684",
+      "name": "Young Silver Dragon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/young-silver-dragon"
+  },
+  {
+      "id": "685",
+      "name": "Young White Dragon",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/young-white-dragon"
+  },
+  {
+      "id": "686",
+      "name": "Yuan-ti Abomination",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/yuan-ti-abomination"
+  },
+  {
+      "id": "687",
+      "name": "Yuan-ti Anathema",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/yuan-ti-anathema"
+  },
+  {
+      "id": "688",
+      "name": "Yuan-ti Broodguard",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/yuan-ti-broodguard"
+  },
+  {
+      "id": "689",
+      "name": "Yuan-ti Malison",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/yuan-ti-malison"
+  },
+  {
+      "id": "690",
+      "name": "Yuan-ti Mind Whisperer",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/yuan-ti-mind-whisperer"
+  },
+  {
+      "id": "691",
+      "name": "Yuan-ti Nightmare Speaker",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/yuan-ti-nightmare-speaker"
+  },
+  {
+      "id": "692",
+      "name": "Yuan-ti Pit Master",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/yuan-ti-pit-master"
+  },
+  {
+      "id": "693",
+      "name": "Yuan-ti Pureblood",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/yuan-ti-pureblood"
+  },
+  {
+      "id": "694",
+      "name": "Zaratan",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/zaratan"
+  },
+  {
+      "id": "695",
+      "name": "Zombie",
+      "dndbeyond": "https://www.dndbeyond.com/monsters/zombie"
   }
 ]

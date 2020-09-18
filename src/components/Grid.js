@@ -29,13 +29,18 @@ class Grid extends React.Component {
 
   constructor(props) {
     super(props);
-    const layout = JSON.parse(localStorage.getItem('gm-tools-layout')) || {
+    this.state = {layout: JSON.parse(localStorage.getItem('gm-tools-layout')) || {
       layout: [],
       keyCounter: 2
-    };
-    this.state = {
-      layout: layout
-    };
+    }};
+  }
+
+  reloadFromStorage = () => {
+    this.setState({layout: JSON.parse(localStorage.getItem('gm-tools-layout')) || {
+      layout: [],
+      keyCounter: 2
+    }});
+    this.props.reloadFromStorage();
   }
 
   static get defaultProps() {
@@ -194,6 +199,7 @@ class Grid extends React.Component {
         <Toolbar
           newCard={this.newCard}
           showCard={this.showCard}
+          reloadFromStorage={this.reloadFromStorage}
         />
       </div>
     )
